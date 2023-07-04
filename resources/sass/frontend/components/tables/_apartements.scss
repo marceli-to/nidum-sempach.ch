@@ -1,0 +1,127 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/tables/global
+ * -----------------------------------------------------------------------------
+ */
+
+.apartements-group {
+  margin-top: 50px;
+
+  @include bp-sm() {
+    margin-top: 75px;
+  }
+}
+
+.apartements-title {
+  // background-color: $color-beige;
+  // border-top-left-radius: 2px;
+  // border-top-right-radius: 2px;
+  border-bottom: 2px solid $color-beige;
+  color: $color-white;
+  @include font-nort-bold();
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+table.apartements {
+  width: 100%;
+
+  th {
+    @include font-nort-bold();
+    @include font-size($fs-xxs);
+    padding: 10px 7px 10px 0;
+  }
+
+  td {
+    @include font-size($fs-xs);
+    padding: 5px 7px 5px 0;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+
+    &.align-right {
+      text-align: right;
+    }
+
+    &.is-last {
+      text-align: right;
+      padding-right: 0 !important;
+    }
+
+    &.hide-mobile {
+      display: none;
+      @include bp-sm() {
+        display: table-cell;
+      }
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid $color-beige;
+
+    &.is-active-row {
+      background-color: $color-beige;
+    }
+
+    &:hover {
+      background-color: $color-beige;
+      cursor: pointer;
+    }
+  }
+
+  thead tr:hover {
+    background-color: transparent !important;
+    cursor: default;
+  }
+
+  tbody td {
+    vertical-align: middle;
+  }
+
+  td.apartement-download {
+    text-align: right;
+
+    svg {
+      display: inline-block;
+      height: auto;
+      width: 10px;
+    }
+  }
+}
+
+.apartements-selection {
+  background-color: $color-beige;
+  bottom: 0;
+  left: 0;
+  @include responsive-prop('padding-bottom', $space-sm);
+  @include responsive-prop('padding-top', $space-sm);
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+
+  > div {
+    @extend %page-block;
+  }
+
+  table.apartements {
+    max-width: 640px;
+    tr {
+      border-bottom: 1px solid $color-white;
+    }
+  }
+
+  th:first-of-type,
+  td:first-of-type {
+    padding-left: 0;
+  }
+
+  h2 {
+    border-bottom: none;
+    @include font-nort-bold();
+    margin-bottom: 10px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}

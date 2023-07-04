@@ -1,0 +1,28 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/utilities
+ * -----------------------------------------------------------------------------
+ */
+
+// Alignments
+.align-center { text-align: center; }
+
+.align-justify { text-align: justify; }
+
+.align-left { text-align: left; }
+
+.align-right { text-align: right; }
+
+.hide-sm {
+  display: none;
+  @include bp-sm() {
+    display: inline-block;
+  }
+}
+
+.hide-md {
+  display: inline-block;
+  @include bp-sm() {
+    display: none;
+  }
+}

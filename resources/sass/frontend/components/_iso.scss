@@ -1,0 +1,44 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/iso
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.iso-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 30px 0;
+  position: sticky;
+  top: 25px;
+
+  svg {
+    @extend %is-responsive;
+
+    &.iso--billroth {
+      max-width: 360px;
+    }
+
+    &.iso--minerva {
+      max-width: 420px;
+    }
+
+    @include bp-md() {
+      max-width: none !important;
+    }
+  }
+}
+
+
+.is-active-iso {
+
+  cursor: pointer;
+
+  .iso-b-0 {
+    fill: $color-beige;
+  }
+
+  .iso-m-0 {
+    fill: $color-beige;
+  }
+}

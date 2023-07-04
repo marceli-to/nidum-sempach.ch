@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/container
+ * -----------------------------------------------------------------------------
+ */
+
+.container {
+    //@include responsive-prop('padding-top', $header-heights);
+}
+
+.container-auth {
+    @include background-default();
+    background-image: url($url-images + 'splash.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

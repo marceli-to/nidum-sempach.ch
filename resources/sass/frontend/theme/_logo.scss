@@ -1,0 +1,48 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: theme/brand
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.logo {
+  background-color: $color-dark-green;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  position: relative;
+  height: auto;
+  width: auto;
+  z-index: 201;
+
+  svg {
+    @extend %is-responsive;
+    max-width: 90px;
+  }
+
+  @include bp-xs() {
+    padding: 25px 15px 15px 15px;
+    svg {
+      max-width: 100px;
+    }
+  }
+
+  @include bp-sm() {
+    padding: 35px 15px 15px 15px;
+    svg {
+      max-width: 110px;
+    }
+  }
+
+  @include bp-lg() {
+    padding: 40px 18px 18px 18px;
+    svg {
+      max-width: 120px;
+    }
+  }
+
+
+}

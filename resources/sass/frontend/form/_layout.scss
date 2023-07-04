@@ -1,0 +1,22 @@
+/**
+ * Forms - layouts
+ * -----------------------------------------------------------------------------
+ */
+
+// Form elements
+.form-row {
+	display: block;
+	margin-bottom: 25px;
+
+	&.is-last {
+		margin-bottom: 0
+	}
+
+	&.form-row--button {
+		margin-top: 35px;
+
+		@include bp-md() {
+			margin-top: 30px;
+		}
+	}
+}

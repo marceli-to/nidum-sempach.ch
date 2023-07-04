@@ -1,0 +1,206 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/grid
+ * -----------------------------------------------------------------------------
+ */
+
+.grid-2x1 {
+  .span {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include bp-xs() {
+      margin-bottom: 0;
+    }
+  }  
+}
+
+.no-cssgrid {
+  .grid-2x1 {
+    @extend %clearfix;
+
+    .span {
+      float: left;
+      margin-right: 25px;
+      width: calc(50% - 13px);
+      &:nth-child(2n+2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.cssgrid {
+  .grid-2x1 {
+    @include bp-xs() {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+    }
+  }
+
+  .grid-4x1 {
+    @include bp-md() {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 25px;
+    }
+  }
+
+  .grid-apartements {
+    @include bp-md() {
+      display: grid;
+      grid-template-columns: 1fr 1.75fr;
+      grid-gap: 25px;
+    }
+
+    @include bp-lg() {
+      grid-template-columns: 1fr 1.5fr;
+      grid-gap: 35px;
+    }
+  }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/grid
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+// display: grid;
+%grid, 
+.grid {
+  display: grid;
+}
+@each $bp, $width in $breakpoints {
+  %#{$bp}\:grid, 
+  .#{$bp}\:grid {
+    @media (min-width: $width) {
+      display: grid;
+    }
+  }
+}
+
+// grid-template-columns: xyz;
+@for $i from 1 through 12 {
+  %grid-cols-#{$i}, 
+  .grid-cols-#{$i} {
+    grid-template-columns: repeat($i, minmax(0, 1fr));
+  }
+}
+@each $bp, $width in $breakpoints {
+  @for $i from 1 through 12 {
+    %#{$bp}\:grid-cols-#{$i}, 
+    .#{$bp}\:grid-cols-#{$i} {
+      @media (min-width: $width) {
+        grid-template-columns: repeat($i, minmax(0, 1fr));
+      }
+    }
+  }
+}
+
+// grid-template-columns: none;
+%grid-cols-none,
+.grid-cols-none {
+  grid-template-columns: none;
+}
+@each $bp, $width in $breakpoints {
+  %#{$bp}\:grid-cols-none, 
+  .#{$bp}\:grid-cols-none {
+    @media (min-width: $width) {
+      grid-template-columns: none;
+    }
+  }
+}
+
+%grid-gap,
+.grid-gap {
+  grid-gap: 17px;
+}
+@each $bp, $width in $breakpoints {
+  %#{$bp}\:grid-gap, 
+  .#{$bp}\:grid-gap {
+    @media (min-width: $width) {
+      grid-gap: 17px;
+    }
+  }
+}
+
+%grid-column-gap,
+.grid-column-gap {
+  grid-column-gap: 17px;
+}
+@each $bp, $width in $breakpoints {
+  %#{$bp}\:grid-column-gap, 
+  .#{$bp}\:grid-column-gap {
+    @media (min-width: $width) {
+      grid-column-gap: 17px;
+    }
+  }
+}
+
+%grid-row-gap,
+.grid-row-gap {
+  grid-row-gap: 17px;
+}
+
+%grid-gap-none,
+.grid-gap-none {
+  grid-column-gap: 0;
+}
+
+// grid-column: xyz;
+@for $i from 1 through 12 {
+  %span-#{$i}, 
+  .span-#{$i} {
+    grid-column: span $i / span $i;
+  }
+}
+@each $bp, $width in $breakpoints {
+  @for $i from 1 through 12 {
+    %#{$bp}\:span-#{$i}, 
+    .#{$bp}\:span-#{$i} {
+      @media (min-width: $width) {
+        grid-column: span $i / span $i;
+      }
+    }
+  }
+}
+
+// grid-column-start: xyz;
+@for $i from 1 through 12 {
+  %start-#{$i}, 
+  .start-#{$i} {
+    grid-column-start: $i !important;
+  }
+}
+@each $bp, $width in $breakpoints {
+  @for $i from 1 through 12 {
+    %#{$bp}\:start-#{$i}, 
+    .#{$bp}\:start-#{$i} {
+      @media (min-width: $width) {
+        grid-column-start: $i !important;
+      }
+    }
+  }
+}
+
+// grid-column-end: xyz;
+@for $i from 1 through 12 {
+  %end-#{$i}, 
+  .end-#{$i} {
+    grid-column-end: $i !important;
+  }
+}
+@each $bp, $width in $breakpoints {
+  @for $i from 1 through 12 {
+    %#{$bp}\:end-#{$i}, 
+    .#{$bp}\:end-#{$i} {
+      @media (min-width: $width) {
+        grid-column-end: $i !important;
+      }
+    }
+  }
+}

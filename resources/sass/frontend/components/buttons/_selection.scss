@@ -1,0 +1,29 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/buttons/selection
+ * -----------------------------------------------------------------------------
+ */
+
+a.btn-selection {
+  display: inline-block;
+  @include font-size($fs-sm);
+  margin-top: 10px;
+  text-decoration: none !important;
+
+  &.is-hide {
+    @include font-nort-bold();
+    margin-left: 15px;
+
+    @include bp-sm() {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  @include bp-sm() {
+    margin-top: 20px;
+  }
+}

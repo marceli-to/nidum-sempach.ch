@@ -1,0 +1,24 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/buttons/primary
+ * -----------------------------------------------------------------------------
+ */
+
+.btn-register {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 2px;
+  color: $color-white !important;
+  display: inline-flex;
+  @include font-nort-bold();
+  @include font-size($fs-xxs);
+  padding: 6px 0  6px 4px;
+  line-height: 1 !important;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none !important;
+
+  &:hover {
+    // color: $color-dark-green !important;
+  }
+}
