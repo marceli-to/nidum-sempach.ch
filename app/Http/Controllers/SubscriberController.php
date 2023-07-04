@@ -46,23 +46,23 @@ class SubscriberController extends Controller
     $subscriber->save();
 
     // mail data
-    $mail_data = [
-      'refProperty' => '2100',
-      'refHouse' => '99',
-      'refObject' => '9999',
-      'inquiryFirstname' => $subscriber->firstname,
-      'inquiryName' => $subscriber->name,
-      'inquiryStreet' => $subscriber->street,
-      'inquiryZip' => $subscriber->zip,
-      'inquiryLocation' => $subscriber->location,
-      'inquiryEmail' => $subscriber->email,
-      'inquiryInterest' => $subscriber->interest,
-      'inquiryPhone' => $subscriber->phone,
-      'remarks' => str_replace("\n", "\r\n", str_replace("\r", '', $subscriber->remarks)),
-    ];
+    // $mail_data = [
+    //   'refProperty' => '2100',
+    //   'refHouse' => '99',
+    //   'refObject' => '9999',
+    //   'inquiryFirstname' => $subscriber->firstname,
+    //   'inquiryName' => $subscriber->name,
+    //   'inquiryStreet' => $subscriber->street,
+    //   'inquiryZip' => $subscriber->zip,
+    //   'inquiryLocation' => $subscriber->location,
+    //   'inquiryEmail' => $subscriber->email,
+    //   'inquiryInterest' => $subscriber->interest,
+    //   'inquiryPhone' => $subscriber->phone,
+    //   'remarks' => str_replace("\n", "\r\n", str_replace("\r", '', $subscriber->remarks)),
+    // ];
 
     // send mail to owner
-    Mail::to(env('MAIL_RECIPIENT'))->send(new ConfirmationOwner(json_encode($mail_data)));
+    // Mail::to(env('MAIL_RECIPIENT'))->send(new ConfirmationOwner(json_encode($mail_data)));
 
     // redirect status
     return redirect()->route('page_contact_subscribed');

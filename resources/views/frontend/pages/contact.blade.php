@@ -18,7 +18,7 @@
         @if ($errors->has('interest'))
           <div class="error-message">{{ $errors->first('interest') }}</div>
         @else
-          <div class="error-message" style="display:none">Bitte mind. 1 Option auswählen</div>
+          <div class="error-message js-error-interest" style="display:none">Bitte mind. 1 Option auswählen</div>
         @endif
         <div class="mt-10x sm:grid sm:grid-cols-12 sm:grid-column-gap">
           <div class="sm:span-6 xs:grid xs:grid-cols-12 xs:grid-column-gap">

@@ -85,7 +85,7 @@ var Validate = (function() {
       var rules  = $(elem).data('rules').split('|');
             
       // loop over all rules for that element
-      if (rules.length > 0) {
+      if (rules.length > 0) {
         for (var z = 0; z < rules.length; z++) {
           
           // check for rules with parameters (i.e. min_length[2])
@@ -96,14 +96,15 @@ var Validate = (function() {
             param    = match[1]; // set additional parameter
           }
           
+
+
           // call validation rule fn
           if (!_self[rules[z]]($(elem),param)) {
             isValid = false;
             $(elem).addClass(classes.hasError);
             $(elem).prev('.error-message').show();
-            
             if ($(elem).is(':checkbox')) {
-              $(elem).parents('.form-controls').find('.error-message').show();
+              $('.js-error-interest').show();
             }
           }
         }

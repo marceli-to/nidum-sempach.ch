@@ -4,11 +4,6 @@
   <div class="page-inner">
     <article>
       <h1>Angebot Wohnen</h1>
-      <p>
-        <a href="/assets/media/download-facts-figures-billroth-minerva.pdf" target="_blank">
-          <strong>Download Facts & Figures [PDF]</strong>
-        </a>
-      </p>
       <form class="apartment-form">
         <div class="grid-4x1">
           <div class="span">

@@ -21,7 +21,14 @@
 }
 
 .alert-success {
-  color: $color--dark-blue;
+  background-color: $color-dark-green;
+  color: $color-white;
   @include font-nort-bold();
+  padding: 5px;
   @include responsive-prop('margin-bottom', $space-md);
+
+  @include bp-sm() {
+    max-width: 50%;
+    padding: 15px;
+  }
 }

@@ -10,10 +10,10 @@
   border-radius: 2px;
   color: $color-white !important;
   display: flex;
+  height: 35px;
   @include font-nort-bold();
   padding: 12px 10px;
   line-height: 1 !important;
-  min-height: 38px;
   margin-top: -15px;
   justify-content: center;
   text-align: center;
@@ -26,9 +26,10 @@
 
   @include bp-lg() {
     margin-top: 6px;
+    height: 40px;
   }
 
   &:hover {
-    background-color: $color-dark-green;
+    color: $color-dark-green !important;
   }
 }
