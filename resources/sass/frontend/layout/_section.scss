@@ -33,19 +33,19 @@ section {
 
     li {
       display: list-item;
-      list-style-type: square;
+      list-style-type: disc;
       margin-bottom: 3px;
     }
 
     .visual {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       
       &:last-child {
         margin-bottom: 0 !important;
       }
 
       @include bp-md() {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
       }
 
       img {

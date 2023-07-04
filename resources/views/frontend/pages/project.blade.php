@@ -4,33 +4,83 @@
   <div class="page-inner">
     <article>
       <h1>Projekt</h1>
-      <p>Mit dem Projekt Billroth / Minerva entstehen beim Hegibachplatz an zentraler und dennoch ruhiger Lage im Zürcher Kreis 7 34 attraktive 2.5 – 4.5-Zimmerwohnungen, welche ab 1. September 2022 bezugsbereit sind.</p>
-      <p>Die zu einem Ensemble zusammengefügten Gebäude bestechen nicht nur durch eine moderne, sehr ansprechende Aussenwirkung, sondern auch durch einen ausgewogenen Wohnungsmix und einladende Aussenbereiche.</p>
-      <p>Der sehr beliebte Kreis 7 ist ein Wohngebiet, das sich über die bewaldeten Hänge des Adlisbergs und des Zürichbergs erstreckt. Die Liegenschaft befindet sich im Quartier Hirslanden unweit des Hegibachplatz, welcher nur wenige Gehminuten entfernt ist. Beim Hegibachplatz verkehren Bus und Tram verschiedener Linien, wie auch die Forchbahn. Der Zürich HB ist innert 10 Minuten erreichbar.</p>  
+      <div class="sm:grid sm:grid-cols-12 sm:grid-gap">
+        <div class="sm:span-6">
+          <p>Mit dem Projekt Nidum entstehen an der Hubelstrasse 3a–e an schöner und ruhiger Lage nahe dem Sempachersee 52 attraktive und familienfreundliche 2.5bis 5.5-Zimmerwohnungen, welche ab April (Häuser a, d, e) und Mai (Häuser b, c) 2024 bezugsbereit sind.</p>
+          <p>Die fünf Gebäude bestechen nicht nur durch eine moderne, sehr ansprechende Aussenwirkung, sondern auch durch einen ausgewogenen Wohnungsmix und einladende Aussenbereiche.</p>
+          <p>Sempach ist durch die idyllische Lage am Sempachersee wie auch die historische Altstadt ein beliebter Wohn- und auch Besuchsort. Der Bahnhof Sempach-Neuenkirch, von wo aus direkte Züge nach Luzern, Zug und Olten verkehren, ist innert wenigen Minuten mit dem Bus erreichbar.</p>
+          <p>Zudem ist ein Supermarkt wie auch das Seebad nur wenige Gehminuten von der Liegenschaft entfernt. Das Schulareal von Sempach mit Kindergarten, Primar- und Sekundarschule ist ebenfalls in sicherer Gehdistanz zu erreichen.</p>
+        </div>
+        <figure class="mt-20x sm:mt-0 sm:span-6 visual">
+          <picture>
+            <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-kueche-essen-md.jpg">
+            <img src="/assets/media/nidum-sempach-kueche-essen.jpg" 
+              alt="Projekt - Nidum – Zuhause am See" 
+              title="Projekt - Nidum – Zuhause am See" 
+              height="900" 
+              width="492">
+          </picture>
+        </figure>
     </article>
   </div>
 </section>
 <section class="page-section is-light">
   <div class="page-inner">
-    <article class="grid-2x1">
-      <div class="span">
-        <h1>Wohnungen</h1>
-        <p>Beim Ausbau der Wohnungen wurde auf ein architektonisches Gesamtkonzept geachtet. So wurden die Wohnungen schlicht aber dennoch modern in einem gehobenen Ausbaustandard gestaltet.</p>
-        <p>Die Wohnungen verfügen über interessante und gut möblierbare Grundrisse. Der hochwertige Ausbaustandard zieht sich durch die gesamte Überbauung, durch die gewählten Farben und Materialien entsteht ein einheitliches Zusammenspiel zwischen Innen- und Aussenwirkung.</p>
-        <p>Die modernen Küchen mit Eichenparkett, welches sich optimal in den restlichen Wohnraum einfügt, dunkelroten und weissen Fronten, Glas Abdeckung und wertigen Elektrogeräten der Marke V-Zug lassen keine Wünsche offen.</p>
-        <p>Ein harmonisches Wohngefühlt wird dem Wohn-/Essbereich sowie den Schlafzimmern und dem Korridor durch das ausgewählte Eichenparkett verliehen. Jede Wohnung verfügt zudem über einen Sitzplatz, Balkon oder eine Terrasse, welche sich direkt vom Wohnbereich aus betreten lässt.</p>
-        <p>Die modernen Bäder sind mit schwarzen Feinsteinzeugbodenplatten sowie hellgrünen und weissen Wandplatten ausgestattet und verfügen über eine Badewanne. Die 4.5-Zimmerwohnungen verfügen zusätzlich über ein zweites Badezimmer mit Dusche. Zudem ist jede Wohnung mit einem eigenen Waschturm ausgestattet.</p>
-        <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
-        <p><a href="{{ route('page_impressions') }}"><strong>360° Tour ansehen</strong></a></p>
+    <article>
+      <h1>Wohnungen</h1> 
+      <div class="sm:grid sm:grid-cols-12 sm:grid-gap">
+        <div class="sm:span-6">
+          <p>Beim Ausbau der Wohnungen wird auf ein architektonisches Gesamtkonzept geachtet. So wurden die Wohnungen schlicht aber dennoch modern in einem gehobenen Ausbaustandard konzipiert. Die Umgebung wird parkähnlich mit viel Grün und Auf- enthaltsflächen sowie Spielplätzen gestaltet.</p>
+          <p>Die Wohnungen verfügen über interessante und gut möblierbare Grundrisse. Der hochwertige Ausbaustandard zieht sich durch die gesamte Überbauung, durch die gewählten Farben und Materialien entsteht ein einheitliches Zusammenspiel zwischen Innen- und Aussenwirkung.</p>
+          <p>Die modernen Küchen mit taupe farbenen Keramik-Bodenplatten, weissen Schränken mit Eicheneinlagen, weisser Silestone-Abdeckung und wertigen Elektrogeräten der Marke V-Zug, fügen sich optimal in den restlichen Wohnraum ein und lassen keine Wünsche offen.</p>
+          <p>Ein harmonisches Wohngefühl wird dem Wohn-/ Essbereich sowie den Schlafzimmern und dem Korridor durch das ausgewählte Fischgrätparkett verliehen. Jede Wohnung verfügt zudem über einen Sitzplatz oder eine Loggia, welche sich direkt vom Wohnbereich aus betreten lässt.</p>
+          <p>Die modernen Bäder sind mit Keramikplatten in Taupe ausgestattet und verfügen über eine Dusche oder Badewanne.</p>
+          <p>Zudem ist jede Wohnung mit einem eigenen Waschturm im Reduit ausgestattet.</p>
+          <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
+        </div>
+        <div class="sm:span-6">
+          <figure class="mt-20x sm:mt-0 sm:span-6 visual">
+            <picture>
+              <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-wohnzimmer-md.jpg">
+              <img src="/assets/media/nidum-sempach-wohnzimmer.jpg" 
+                alt="Projekt - Nidum – Zuhause am See" 
+                title="Projekt - Nidum – Zuhause am See" 
+                height="900" 
+                width="492">
+            </picture>
+          </figure>
+          <figure class="mt-20x sm:mt-0 sm:span-6 visual">
+            <picture>
+              <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-badezimmer-md.jpg">
+              <img src="/assets/media/nidum-sempach-badezimmer.jpg" 
+                alt="Projekt - Nidum – Zuhause am See" 
+                title="Projekt - Nidum – Zuhause am See" 
+                height="900" 
+                width="492">
+            </picture>
+          </figure>
+        </div>
       </div>
-      <div class="span">
-        <figure class="visual">
-          <img src="/assets/media/billroth-minerva-wohnen-4.jpg" width="1200" height="848" alt="Wohnzimmer - Nidum – Zuhause am See">
-        </figure>
-        <figure class="visual">
-          <img src="/assets/media/billroth-minerva-buero-2.jpg" width="1200" height="848" alt="Büro - Nidum – Zuhause am See">
-        </figure>
-      </div>
+    </article>
+  </div>
+</section>
+<section class="page-section is-dark">
+  <div class="page-inner">
+    <article>
+      <h1>Mobilitätsstation Nidum</h1>
+      <div class="sm:grid sm:grid-cols-12 sm:grid-gap">
+        <div class="sm:span-6">
+          <strong class="text-beige">Profitieren Sie als Mieter ohne Auto vom Bonusprogramm</strong><br>
+          <p>Damit Sie auch ohne eigenes Auto mobil sind, steht Ihnen eine Mobilitätsstation mit einem vielseitigen Sharing-Angebot zur Verfügung. Die gesamte Fahrzeug-Flotte ist elektrisch angetrieben und kann rund um die Uhr über die Trafikpoint-App gebucht werden. Sie bezahlen nur für die Zeit der Nutzung, Abo-Gebühren fallen keine an.</p>
+          <p>Die Sharing-Flotte verfügt über folgende Fahrzeu- ge und wird auf den Aussenparkplätzen neben der Tiefgarageneinfahrt stationiert sein:</p>
+          <ul>
+            <li>1× E-Auto Economy</li>
+            <li>1× E-Roller</li>
+            <li>1× E-Cargobike</li>
+            <li>2× E-Bikes</li>
+            <li>Öffentliches Bikesharing Nextbikes</li>
+          </ul>
+        </div>
     </article>
   </div>
 </section>

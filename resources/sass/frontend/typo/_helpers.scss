@@ -15,6 +15,14 @@
 
 .nobr { white-space: nowrap; }
 
+.text-beige {
+  color: $color-beige;
+}
+
+.text-dark-green {
+  color: $color-dark-green;
+}
+
 
 /**
  * Typography - Font size helpers
@@ -33,7 +41,7 @@ strong, b {
 }
 
 p {
-	@include responsive-prop('margin-bottom', $space-sm);
+  margin-bottom: 15px;
 
 	&:last-child {
 		margin-bottom: 0;
