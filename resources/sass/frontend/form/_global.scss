@@ -10,10 +10,10 @@ input[type=password],
 textarea,
 select,
 button {
-	background-color: $color-white;
+	background-color: $color-dark-green;
 	border-radius: 2px;
-	border: 1px solid $color-white;
-	color: $color-dark-green;
+	border: 1px solid $color-dark-green;
+	color: $color-white;
 	display: block;
 	@include font-size($fs-sm);
 	line-height: 1;
@@ -30,7 +30,7 @@ input[type=text],
 input[type=email],
 input[type=number],
 input[type=password] {
-	padding: 6px 12px;
+	padding: 8px 12px;
 
 	@include bp-sm() {
 		padding: 10px 20px;
@@ -89,9 +89,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label::before {
 	border-radius: 2px;
-  width: 12px;
-  height: 12px;
-  background-color: $color-white;
+  width: 14px;
+  height: 14px;
+  background-color: $color-dark-green;
   display: block;
   content: "";
   float: left;
@@ -101,12 +101,16 @@ input[type="checkbox"] + label::before {
 	position: relative;
 	
 	@include bp-md() {
-		width: 15px;
-		height: 15px;
+		width: 16px;
+		height: 16px;
 		margin-right: 10px;
 	}
 }
 
 input[type="checkbox"]:checked+label::before {
-  background-color: $color-beige;
+  background-image: url($url-images + 'checkmark.svg');
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+  background-position: center center;
+  font-size: 14px;
 }

@@ -28,8 +28,7 @@ class SubscriberController extends Controller
       'firstname' => 'required',
       'name'      => 'required',
       'street'    => 'required',
-      'zip'       => 'required',
-      'city'      => 'required',
+      'location'  => 'required',
       'email'     => 'required|email',
       'interest'  => 'required|min:1',
     ]);
@@ -39,8 +38,7 @@ class SubscriberController extends Controller
     $subscriber->firstname  = $request->firstname;
     $subscriber->name       = $request->name;
     $subscriber->street     = $request->street;
-    $subscriber->zip        = $request->zip;
-    $subscriber->city       = $request->city;
+    $subscriber->location   = $request->location;
     $subscriber->email      = $request->email;
     $subscriber->interest   = implode(', ' , $request->interest);
     $subscriber->phone      = isset($request->phone) ? $request->phone : NULL;
@@ -56,7 +54,7 @@ class SubscriberController extends Controller
       'inquiryName' => $subscriber->name,
       'inquiryStreet' => $subscriber->street,
       'inquiryZip' => $subscriber->zip,
-      'inquiryCity' => $subscriber->city,
+      'inquiryLocation' => $subscriber->location,
       'inquiryEmail' => $subscriber->email,
       'inquiryInterest' => $subscriber->interest,
       'inquiryPhone' => $subscriber->phone,

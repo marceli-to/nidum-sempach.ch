@@ -15,14 +15,14 @@ class CreateSubscribersTable extends Migration
     {
         Schema::create('subscribers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('firstname', 100);
-            $table->string('name', 100);
-            $table->string('street', 100);
-            $table->string('city', 100);
-            $table->string('email', 100);
+            $table->string('firstname', 255);
+            $table->string('name', 255);
+            $table->string('street', 255);
+            $table->string('location', 255);
+            $table->string('email', 255);
             $table->string('phone', 100)->nullable();
-            $table->mediumText('remarks')->nullable();
-            $table->string('interest', 100);
+            $table->text('remarks')->nullable();
+            $table->string('interest', 50);
             $table->timestamps();
         });
     }

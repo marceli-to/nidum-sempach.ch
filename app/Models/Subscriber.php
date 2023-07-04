@@ -8,8 +8,7 @@ class Subscriber extends Model
   protected $fillable = [
     'name',
     'firstname',
-    'zip',
-    'city',
+    'location',
     'street',
     'email',
     'phone',

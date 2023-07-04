@@ -2,115 +2,106 @@
 @section('content')
 <section class="page-section is-light">
   <div class="page-inner">
-    <h1>Ausbau</h1>
-    <p>
-      <a href="/assets/media/kurzbaubeschrieb-billroth-minerva.pdf" target="_blank">
-        <strong>Kurzbaubeschrieb Wohnungen [PDF]</strong>
-      </a>
-    </p>
-    <article class="grid-2x1">
-      <div class="span">
-        <h3>Korridor:</h3>
+    <h1>Ausbau Wohnungen</h1>
+    <article class="xs:grid xs:grid-cols-12 xs:grid-gap">
+      <div class="xs:span-6">
+        <h3>Eingangsbereich</h3>
         <ul>
-          <li>Bodenbeläge: Parkett Eiche, Schiffsboden 3-Stab, Andante-mattversiegelt weiss</li>
-          <li>Wandbeläge: Weissputz, weiss gestrichen</li>
-          <li>Decke: Weissputz, weiss gestrichen</li>
-          <li>Ein-/Ausbauten: Garderobe, weiss</li>
+          <li>Bodenbeläge: Parkett, Eiche natur geölt, Fischgrat, Sortierung lebendig</li>
+          <li>Wände: Variovlies weiss</li>
+          <li>Decke: Weissputz</li>
+          <li>Garderobe: Weiss, Eicheneinlage Strukturlaminat, Eiche Endgrain Classic</li>
         </ul>
-        <h3>Wohn- und Essraum:</h3>
+        <h3>Küche</h3>
         <ul>
-          <li>Bodenbeläge: Parkett Eiche, Schiffsboden 3-Stab, Andante-mattversiegelt weiss</li>
-          <li>Wandbeläge: Weissputz, weiss gestrichen</li>
-          <li>Decke: Weissputz, weiss gestrichen</li>
+          <li>Bodenbeläge: Keramikplatten, taupe / Parkett, Eiche natur geölt, Fischgrat, Sortierung lebendig</li>
+          <li>Wände: Variovlies weiss</li>
+          <li>Decke: Weissputz</li>
+          <li>Rückwand: Porzellanplatten, Keravita M5QA Zellige Lana</li>
+          <li>Einbauten: Fronten Küchenschränke weiss, Eicheneinlage Strukturlaminat, Eiche Endgrain Classic</li>
+          <li>Küchenabdeckung: Silestone Blanco Norte</li>
+          <li>Geräte: Induktionskochfeld, Dampfabzug oder Induktionskochfeld mit integriertem Dampfabzug (freistehende Kochinseln), Backofen, Kühl- und Gefriergerät, Geschirrspüler</li>
+          <li>4.5- und 5.5-ZWG: Backofen / Steamer (Kombigerät)</li>
+          <li>Alle Geräte Marke V-Zug ausser Induktionskochfeld mit integriertem Dampfabzug Marke Bora</li>
+          <li>Müllex Kehrrichtsystem</li>
         </ul>
-        <h3>Zimmer:</h3>
+        <h3>Wohnen / Essen / Zimmer</h3>
         <ul>
-          <li>Bodenbeläge: Parkett Eiche, Schiffsboden 3-Stab, Andante-mattversiegelt weiss</li>
-          <li>Wandbeläge: Weissputz, weiss gestrichen</li>
-          <li>Decke: Weissputz, weiss gestrichen</li>
+          <li>Bodenbeläge: Parkett, Eiche natur geölt, Fischgrat, Sortierung lebendig</li>
+          <li>Wände: Variovlies weiss</li>
+          <li>Decke: Weissputz</li>
         </ul>
-        <h3>Küche:</h3>
+        <h3>Badezimmer</h3>
         <ul>
-          <li>Bodenbeläge: Parkett Eiche, Schiffsboden 3-Stab, Andante-mattversiegelt weiss</li>
-          <li>Wandbeläge: Weissputz, weiss gestrichen</li>
-          <li>Decke: Weissputz, weiss gestrichen</li>
-          <li>Einbauten: Küchenfronten Kunstharzbelegte Spanplatte, Hochschränke und Kücheninseln Burgundrot, Oberschränke Porzellanweiss</li>
-          <li>Küchenabdeckung: Glas, silk grey</li>
-          <li>Küchenrückwand: Glas, silk grey</li>
-          <li>Geräte: Induktionskochfeld, Dunstabzug (bei 4.5-ZWG + Dachwohnung integriert in Kochfeld), Backofen, Steamer (bei 2.5-ZWG EG bis 4. OG Kombigerät Backofen / Steamer), Geschirrspüler und Kühl-/ Gefriergerät, alle Geräte Marke V-Zug</li>
+          <li>Bodenbeläge: Keramikplatten, taupe Wandplatten: Keramikplatten, taupe</li>
+          <li>Wände: Weissputz</li>
+          <li>Decke: Weissputz</li>
+          <li>Sanitärapparate: Keramik weiss, Spiegelschrank Strukturlaminat Eiche pale grain Armaturen: verchromt</li>
+          <li>Waschtischmöbel: Strukturlaminat Eiche pale grain</li>
         </ul>
-        <h3>Badezimmer:</h3>
+        <h3>Reduit</h3>
         <ul>
-          <li>Bodenbeläge: Feinsteinzeugplatten, schwarz mit leichter Textur</li>
-          <li>Wandbeläge: Steingutplatten weiss matt und Feinsteinzeugplatten hellgrün matt</li>
-          <li>Decke: Weissputz, weiss gestrichen</li>
-          <li>Sanitärapparate: Keramik weiss</li>
-          <li>Armaturen: Verchromt</li>
-          <li>Spiegelschrank: weiss mit LED-Beleuchtung und Steckdose</li>
-          <li>Badewannen und Duschen mit Glastrennwand</li>
+          <li>Bodenbeläge: Keramikplatten, taupe</li>
+          <li>Wände: Weissputz</li>
+          <li>Decke: Weissputz</li>
         </ul>
-        <h3>Aussenfläche:</h3>
+        <h3>Aussenfläche</h3>
         <ul>
-          <li>Boden Balkon/ Sitzplatz: Feinsteinzeugplatten, hellgrau</li>
-          <li>Dachterrassen: Boden Feinsteinzeugplatten, hellgrau, Wasseranschluss</li>
-        </ul>
-        <h3>Fenster:</h3>
-        <ul>
-          <li>Holz/Aluminium-Fenster, 3-fach verglast, innen weiss, aussen Metall pulverbeschichtet gold</li>
-          <li>Dachwohnungen mit Terrasse: Dachflächenfenster mit elektrischem Sonnenschutz, bedienbar mit Fernsteuerung</li>
+          <li>Bodenbelag Sitzplatz: Feinsteinzeugplatten</li>
+          <li>Bodenbelag Loggia: Feinsteinzeugplatten</li>
+          <li>Deckenleuchte und Steckdose vorhanden</li>
         </ul>
       </div>
-      <div class="span">
-        <h3>Verdunkelung:</h3>
+      <div class="xs:span-6">
+        <h3>Fenster</h3>
         <ul>
-          <li>Alu-Rafflamellenstoren, dunkelrot</li>
-          <li>Vorhangschienen in Schlaf- und Wohnzimmern</li>
+          <li>Holz/Metallfenster, 3-fach Isolierverglasung, Natur lasiert</li>
         </ul>
-        <h3>Sonnenschutz:</h3>
+        <h3>Verdunkelung</h3>
         <ul>
-          <li>Balkone EG bis 4.OG: Aussenvorhang, dunkelrot</li>
-          <li>Loggia Dachgeschoss: Gelenkarmmarkise, dunkelrot</li>
-          <li>Dachterrassen: Sonnenschirm 3.5 x 3.5m, weiss</li>
+          <li>Rafflamellenstoren mit Elektroantrieb</li>
         </ul>
-        <h3>Elektroanlagen:</h3>
+        <h3>Sonnenstoren</h3>
+        <ul>
+          <li>Knick- und Fallarmmarkisen aus Stoff</li>
+        </ul>
+        <h3>Elektroanlagen</h3>
         <ul>
           <li>Gegensprechanlage und elektrische Türöffnung</li>
-          <li>Alle Wohn- und Schlafräume mit Steckdosen und Lampenstellen in genügender Anzahl. Küche und Korridor: LED Einbauspots</li>
-          <li>Multimedia-Verteiler im Eingangsbereich</li>
-          <li>Wohnzimmer: ausgebaute Multimedia-Dose inkl. Glasfaseranschluss</li>
-          <li>Grosses Schlafzimmer: ausgebaute Multimedia-Dose</li>
-          <li>Übrige Zimmer: Leerrohre mit Blindabdeckung</li>
-          <li>Internetangebot: ewz.zürinet und Cablecom</li>
-          <li>Aussenfläche: Steckdose und Deckenleuchte</li>
+          <li>Alle Wohn- und Schlafräume mit Steckdosen in genügender Anzahl</li>
+          <li>Beleuchtung in Bad und Küche</li>
+          <li>Beleuchtung in allg. Räumen, Umgebung usw.</li>
+          <li>Photovoltaikanlage</li>
         </ul>
-        <h3>Heizungsanlagen:</h3>
+        <h3>Heizungsanlagen</h3>
         <ul>
-          <li>Beheizung mittels Bodenheizung, Heizungstyp: Erdsonden Wärmepumpe</li>
+          <li>Sole/Wasser-Wärmepumpe, Beheizung mittels Fussbodenheizung</li>
+          <li>Freecooling (Absenkung der Raumtemperatur im Sommer um 1-2° möglich)</li>
         </ul>
-        <h3>Lüftungsanlagen:</h3>
+        <h3>Lüftungsanlagen</h3>
         <ul>
-          <li>Wohnungsgrundlüftung über Einzelraumlüftung neben dem Fenster: im Wohnzimmer (nur in einzelnen Wohnungen im B5 auch im Schlafzimmer)</li>
-          <li>Abluftanlagen in Nasszellen (über Dach)</li>
+          <li>Mechanische Lüftung bei innenliegenden Nasszellen und Reduit sowie Keller</li>
         </ul>
-        <h3>Liftanlagen:</h3>
+        <h3>Liftanlagen</h3>
         <ul>
-          <li>Pro Haus ein Personenaufzug für max. 8 Personen. Nutzlast 630 kg, rollstuhlgängig</li>
+          <li>Pro Haus ein Personenaufzug für max. 8 Personen vorhanden. Nutzplast 630 kg. Rollstuhlgängig</li>
         </ul>
-        <h3>Keller:</h3>
+        <h3>Keller</h3>
         <ul>
-          <li>Pro Wohnung ein Kellerabteil, beleuchtet und mit Steckdose auf Wohnungszähler, Schliessung mit Zylinder auf Wohnungsschliessung</li>
+          <li>Pro Wohnung ein Kellerabteil</li>
         </ul>
-        <h3>Waschküche / Trockenraum:</h3>
+        <h3>Waschen / Trocknen</h3>
         <ul>
-          <li>Jede Wohnung verfügt über eine Waschmaschine und einen Trockner, Marke V-Zug Trocknungsraum im UG</li>
+          <li>Jede Wohnung verfügt über eine Waschmaschine / Tumbler, Marke V-Zug Adora</li>
+          <li>Gemeinschaftlich genutzter Trocknungsraum im UG</li>
         </ul>
-        <h3>Parkierung:</h3>
+        <h3>Parkierung</h3>
         <ul>
-          <li>18 Einstellplätze</li>
+          <li>52 Autoeinstellplätze (inkl. 16 Plätze mit E-Ladestation) sowie 12 Motorradplätze</li>
         </ul>
-        <h3>Umgebung:</h3>
+        <h3>Umgebung</h3>
         <ul>
-          <li>Begrünte Aussenanlage</li>
+          <li>Begrünte Aussenanlage mit Aufenthalts- und Spielplätzen</li>
         </ul>
         <p>* Änderungen vorbehalten.</p>
       </div>
