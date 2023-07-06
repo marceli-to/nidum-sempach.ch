@@ -17,8 +17,8 @@
   justify-content: center;
   text-align: center;
   text-decoration: none !important;
+}
 
-  &:hover {
-    // color: $color-dark-green !important;
-  }
+.apartements.apartements--selection .btn-register {
+  color: $color-dark-green !important;
 }

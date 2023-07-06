@@ -5,22 +5,18 @@
  */
 
 .apartements-group {
-  margin-top: 50px;
+  margin-top: 30px;
 
-  @include bp-sm() {
-    margin-top: 75px;
+  @include bp-lg() {
+    margin-top: 45px;
   }
 }
 
 .apartements-title {
-  // background-color: $color-beige;
-  // border-top-left-radius: 2px;
-  // border-top-right-radius: 2px;
   border-bottom: 2px solid $color-beige;
   color: $color-white;
   @include font-nort-bold();
   padding: 10px 0;
-  text-transform: uppercase;
 }
 
 table.apartements {
@@ -47,7 +43,7 @@ table.apartements {
 
     &.is-last {
       text-align: right;
-      padding-right: 0 !important;
+      padding-right: 2px !important;
     }
 
     &.hide-mobile {
@@ -68,6 +64,18 @@ table.apartements {
     &:hover {
       background-color: $color-beige;
       cursor: pointer;
+
+      td {
+        color: $color-dark-green;
+      }
+
+      svg {
+        color: $color-dark-green;
+      }
+
+      .btn-register {
+        color: $color-dark-green !important;
+      }
     }
   }
 
@@ -78,6 +86,8 @@ table.apartements {
 
   tbody td {
     vertical-align: middle;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   td.apartement-download {
@@ -89,10 +99,21 @@ table.apartements {
       width: 10px;
     }
   }
+
+  &.apartments--selection {
+    tr {
+      &:hover {
+        svg {
+          color: $color-dark-green;
+        }
+      }
+    }
+  }
 }
 
 .apartements-selection {
   background-color: $color-beige;
+  color: $color-dark-green;
   bottom: 0;
   left: 0;
   @include responsive-prop('padding-bottom', $space-sm);
@@ -108,7 +129,7 @@ table.apartements {
   table.apartements {
     max-width: 640px;
     tr {
-      border-bottom: 1px solid $color-white;
+      border-bottom: 1px solid $color-dark-green;
     }
   }
 

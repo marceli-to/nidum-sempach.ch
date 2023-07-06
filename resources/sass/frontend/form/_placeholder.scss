@@ -6,4 +6,6 @@
 
 ::placeholder {
   color: $color-white;
+  @include font-size($fs-md);
+  line-height: 1 !important;
 }

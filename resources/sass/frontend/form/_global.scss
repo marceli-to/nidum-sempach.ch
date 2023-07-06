@@ -8,14 +8,13 @@ input[type=email],
 input[type=number],
 input[type=password],
 textarea,
-select,
-button {
+select {
 	background-color: $color-dark-green;
 	border-radius: 2px;
 	border: 1px solid $color-dark-green;
 	color: $color-white;
 	display: block;
-	@include font-size($fs-sm);
+	@include font-size($fs-md);
 	line-height: 1;
 	padding: 10px;
 	position: relative;
@@ -51,26 +50,28 @@ select::-ms-expand {
 	display: none;
 }
 
-input[type=submit] {
-	background-color: $color-dark-green;
-	border-color: transparent;
-	border-radius: 2px;
-	color: $color-white;
-	display: inline-block;
-	@include font-nort-bold();
-	min-width: 125px;
-	text-align: center;
-	text-transform: uppercase;
-	width: auto;
-	padding: 7px 25px;
-	transition: background-color .12s ease-out, color .12s ease-out;
+// input[type=submit] {
+// 	background-color: $color-dark-green;
+// 	border-color: transparent;
+// 	border-radius: 2px;
+// 	color: $color-white;
+// 	display: inline-block;
+// 	@include font-nort-bold();
+// 	min-width: 125px;
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	width: auto;
+// 	padding: 7px 25px;
+// 	transition: background-color .12s ease-out, color .12s ease-out;
 
-	&:hover {
-		background-color: $color-beige;
-	}
-}
+// 	&:hover {
+// 		background-color: $color-beige;
+// 	}
+// }
 
 input[type="checkbox"] + label {
+  color: $color-dark-green !important;
+  cursor: pointer;
   position: absolute;
 }
 

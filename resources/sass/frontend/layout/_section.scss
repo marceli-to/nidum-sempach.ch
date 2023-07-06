@@ -12,7 +12,8 @@ section {
 
   &.page-section {
     @include responsive-prop('padding-top', $space-md);
-    
+    scroll-margin-top: 150px;
+
     article {
       @include responsive-prop('padding-bottom', $space-md);
     }

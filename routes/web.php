@@ -24,10 +24,10 @@ Route::get('/impressum', 'PageController@imprint')->name('page_imprint');
  * Admin routes
  */
 
-Route::view('admin', 'backend.app');
-Route::get('admin/{any}', function () {
-	return view('backend.app');
-})->where('any', '.*');
+// Route::view('admin', 'backend.app');
+// Route::get('admin/{any}', function () {
+// 	return view('backend.app');
+// })->where('any', '.*');
 
 
 // Route::get('/iso', 'ApartementController@iso');

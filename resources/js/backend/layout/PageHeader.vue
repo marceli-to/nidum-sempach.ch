@@ -3,7 +3,7 @@
     <header class="site-header">
       <div>
         <a href="/admin/apartements" class="brand">
-          <h1>Billroth Minerva</h1>
+          <h1>Nidum Sempach</h1>
         </a>
         <a href="javascript:;" @click="toggleMenu()" class="icon-menu"></a>
       </div>

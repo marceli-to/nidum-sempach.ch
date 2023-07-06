@@ -51,6 +51,7 @@
           <li>Bodenbelag Loggia: Feinsteinzeugplatten</li>
           <li>Deckenleuchte und Steckdose vorhanden</li>
         </ul>
+        <a href="/assets/media/nidum-sempach-kurzbaubeschrieb.pdf" target="_blank" class="btn-secondary is-dark" title="Download Kurzbaubeschrieb">Kurzbaubeschrieb</a>
       </div>
       <div class="xs:span-6">
         <h3>Fenster</h3>

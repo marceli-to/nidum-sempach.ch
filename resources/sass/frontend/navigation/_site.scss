@@ -48,6 +48,10 @@ nav.site-nav {
       position: relative;
       margin-right: 20px;
     }
+
+    @include bp-lg() {
+      margin-right: 30px;
+    }
   }
 
   a {

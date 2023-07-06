@@ -5,21 +5,21 @@
     <article>
       <h1>Angebot Wohnen</h1>
       <form class="apartment-form">
-        <div class="grid-4x1">
-          <div class="span">
+        <div class="sm:grid sm:grid-cols-12 sm:grid-column-gap">
+          <div class="sm:span-3">
             <div class="form-row">
               <label class="is-title">Verfügbarkeit</label>
               <div class="select-wrapper">
                 <select data-filter-type="state" class="js-filter-select">
                   <option value="NULL">Alle Wohnungen</option>
-                  <option value="1">frei</option>
-                  <option value="2">reserviert</option>
-                  <option value="3">vermietet</option>
+                  <option value="free">frei</option>
+                  <option value="rented">reserviert</option>
+                  <option value="reserved">vermietet</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="span">
+          <div class="sm:span-3">
             <div class="form-row">
               <label class="is-title">Zimmer</label>
               <div class="select-wrapper">
@@ -28,33 +28,45 @@
                   <option value="2.5">2.5</option>
                   <option value="3.5">3.5</option>
                   <option value="4.5">4.5</option>
+                  <option value="5.5">5.5</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="span">
+          <div class="sm:span-3">
+            <div class="form-row">
+              <label class="is-title">Haus</label>
+              <div class="select-wrapper">
+                <select data-filter-type="building" class="js-filter-select">
+                  <option value="NULL">Alle Häuser</option>
+                  <option value="a">A</option>
+                  <option value="b">B</option>
+                  <option value="c">C</option>
+                  <option value="d">D</option>
+                  <option value="e">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="sm:span-3">
             <div class="form-row">
               <label class="is-title">Etage</label>
               <div class="select-wrapper">
                 <select data-filter-type="floor" class="js-filter-select">
                   <option value="NULL">Alle Etagen</option>
-                  <option value="1">EG</option>
-                  <option value="2">1. OG</option>
-                  <option value="3">2. OG</option>
-                  <option value="4">3. OG</option>
-                  <option value="5">4. OG</option>
-                  <option value="6">5. OG</option>
+                  <option value="eg">EG</option>
+                  <option value="1.og">1. OG</option>
+                  <option value="2.og">2. OG</option>
+                  <option value="3.og">3. OG</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="span">
-            <div class="form-row form-row--button">
-              <div>
-                <a href="javascript:;" class="btn-primary js-btn-reset">
-                  <span>Filter zurücksetzen</span>
-                </a>
-              </div>
+          <div class="sm:span-3">
+            <div>
+              <a href="javascript:;" class="btn-primary is-reset js-btn-reset">
+                <span>Filter zurücksetzen</span>
+              </a>
             </div>
           </div>
         </div>
@@ -87,9 +99,7 @@
           <a href="javascript:;" class="btn-selection is-hide js-selection-hide">Auswahl verbergen</a>
         </div>
       </div>
-
-      @include('frontend.partials.buildings.billrothweg')
-      @include('frontend.partials.buildings.minervastrasse')
+      @include('frontend.partials.buildings')
     </article>
   </div>
 </section>

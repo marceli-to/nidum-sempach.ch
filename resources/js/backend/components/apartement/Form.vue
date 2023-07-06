@@ -54,13 +54,13 @@
               >
               <div class="is-required">Pflichtfeld</div>
             </div>
-            <div class="form-row" :class="errors.square_footage ? 'has-error': ''">
+            <div class="form-row" :class="errors.footage ? 'has-error': ''">
               <label>Nettowohnfläche (m2)</label>
               <input
                 type="text"
-                @focus="removeError('square_footage')"
-                name="square_footage"
-                v-model="apartement.square_footage"
+                @focus="removeError('footage')"
+                name="footage"
+                v-model="apartement.footage"
               >
               <div class="is-required">Pflichtfeld</div>
             </div>
@@ -109,11 +109,11 @@
               <div class="is-required">Pflichtfeld</div>
             </div>
             <div class="form-row">
-              <label>Flatfox URI</label>
+              <label>URI</label>
               <input
                 type="text"
-                name="flatfox_uri"
-                v-model="apartement.flatfox_uri"
+                name="uri"
+                v-model="apartement.uri"
               >
             </div>
           </div>
@@ -147,7 +147,7 @@ export default {
         building: false,
         number: false,
         floor: false,
-        square_footage: false,
+        footage: false,
         rent_net: false,
         rent_gross: false,
         additional_cost: false,
@@ -159,7 +159,7 @@ export default {
         building: null,
         number: null,
         floor: null,
-        square_footage: null,
+        footage: null,
         rent_net: null,
         rent_gross: null,
         flatfox_uri: false,
@@ -168,12 +168,10 @@ export default {
       },
 
       floors: {
-        1: 'EG',
-        2: '1. OG',
-        3: '2. OG',
-        4: '3. OG',
-        5: '4. OG',
-        6: '5. OG',
+        'EG': 'EG',
+        '1. OG': '1. OG',
+        '2. OG': '2. OG',
+        '3. OG': '3. OG',
       },
 
       states: {
@@ -183,8 +181,11 @@ export default {
       },
       
       buildings: {
-        5: '5',
-        136: '136',
+        a: 'a',
+        b: 'b',
+        c: 'c',
+        d: 'd',
+        e: 'e',
       },
     };
   },
@@ -209,7 +210,7 @@ export default {
         this.apartement.rent_net &&
         this.apartement.rent_gross &&
         this.apartement.additional_cost &&
-        this.apartement.square_footage &&
+        this.apartement.footage &&
         this.apartement.state
       ) {
         return true;

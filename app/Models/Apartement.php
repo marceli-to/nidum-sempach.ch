@@ -8,15 +8,31 @@ class Apartement extends Model
   protected $fillable = [
     'number',
     'building',
-    'additional_cost',
-    'rent_net',
-    'rent_gross',
-    'flatfox_uri',
-    'state',
     'floor',
     'rooms',
+    'footage',
+    'footage_outer',
+    'rent_net',
+    'additional_cost',
+    'rent_gross',
     'order',
-    'square_footage',
+    'state',
+    'flatfox_uri',
     'last_update_by',
   ];
+
+  protected $appends = [
+    'number_string',
+    'floor_string',
+  ];
+
+  public function getNumberStringAttribute()
+  {
+    return strtolower(str_replace(' ', '', $this->number));
+  }
+
+  public function getFloorStringAttribute()
+  {
+    return strtolower(str_replace(' ', '', $this->floor));
+  }
 }

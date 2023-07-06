@@ -12,11 +12,4 @@
 		margin-bottom: 0
 	}
 
-	&.form-row--button {
-		margin-top: 35px;
-
-		@include bp-md() {
-			margin-top: 30px;
-		}
-	}
 }

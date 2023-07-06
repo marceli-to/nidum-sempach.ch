@@ -1,27 +1,25 @@
 /**
  * -----------------------------------------------------------------------------
- * File: components/buttons/primary
+ * File: components/buttons/secondary
  * -----------------------------------------------------------------------------
  */
 
-input[type=submit].btn-primary,
-.btn-primary {
+input[type=submit].btn-secondary,
+a.btn-secondary {
   align-items: center;
   background-color: $color-beige;
   border-radius: 2px;
-  color: $color-white !important;
-  display: flex;
+  border: none !important;
+  color: $color-dark-green !important;
+  display: inline-flex;
   height: 35px;
   @include font-nort-bold();
-  padding: 12px 10px;
+  padding: 12px 16px;
   line-height: 1 !important;
   justify-content: center;
   text-align: center;
   text-decoration: none !important;
   transition: background-color .1s ease-in;
-	outline: none !important;
-	width: 100%;
-	z-index: 1;
 	-webkit-appearance: none;
 	-webkit-tap-highlight-color: $color-white;
 
@@ -29,15 +27,8 @@ input[type=submit].btn-primary,
     height: 40px;
   }
 
-  &.is-reset {
-    background-color: $color-light-beige;
-    color: $color-dark-green !important;
-    text-align: left !important;
-    justify-content: flex-start !important;
-
-    &:hover {
-      background-color: $color-beige;
-    }
+  &.is-dark {
+    background-color: $color-dark-green;
+    color: $color-white !important;
   }
-
 }

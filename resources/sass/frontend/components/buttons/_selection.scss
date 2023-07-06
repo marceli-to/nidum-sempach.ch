@@ -7,6 +7,7 @@
 a.btn-selection {
   display: inline-block;
   @include font-size($fs-sm);
+  color: $color-dark-green !important;
   margin-top: 10px;
   text-decoration: none !important;
 

@@ -1,9 +1,9 @@
 <div class="apartements-group grid-apartements">
   <div class="span">
     <div class="iso-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" width="418" height="388" viewBox="0 0 417.9 387.9" class="iso iso--billroth">
+      {{-- <svg xmlns="http://www.w3.org/2000/svg" width="418" height="388" viewBox="0 0 417.9 387.9" class="iso iso--billroth">
         <style type="text/css">
-          .iso-b-0{fill:#A9C8A6;}
+          .iso-b-0{fill:#5D7975;}
           .iso-b-1{fill:#759178;}
           .iso-b-2{display:none;}
           .iso-b-3{display:inline;fill:#BCA26D;}
@@ -429,11 +429,11 @@
             <polyline class="iso-b-7" points="230.8,175.9 230.8,333 317.5,283.1 317.5,251.6 230.8,301.5"/>
           </g>
         </g>
-      </svg>
+      </svg> --}}
     </div>
   </div>
   <div class="span">
-    <h2 class="apartements-title">Billrothweg 5</h2>
+    <h2 class="apartements-title">Hubelstrasse 3a–e</h2>
     <table class="apartements">
       <thead>
         <th>Nr.</th>
@@ -452,49 +452,50 @@
         </th>
       </thead>
       <tbody>
-        @foreach($apartements_billroth as $a)
+        @foreach($apartements as $a)
           <tr 
             class="js-list-item" 
-            data-id="{{$a->id}}" 
-            data-number="{{$a->number}}" 
-            data-floor="{{$a->floor}}"
-            data-state="{{$a->state}}"
-            data-rooms="{{$a->rooms}}"
-            data-plan="/assets/media/oerlikonerstrasse-{{$a->number}}.pdf">
-            <td>{{$a->number}}</td>
-            <td>{{config('content.floors.' . $a->floor)}}</td>
-            <td>{{$a->rooms}}</td>
-            <td>{{$a->square_footage}}</td>
+            data-id="{{ AppHelper::sanitizeApartmentTitle($a['title']) }}" 
+            data-number="{{ AppHelper::sanitizeApartmentTitle($a['title']) }}" 
+            data-floor="{{ AppHelper::sanitizeApartmentFloor($a['floor']) }}"
+            data-building="{{ $a['building']['building_title'] }}"
+            data-state="{{ $a['object_state'] }}"
+            data-rooms="{{ $a['rooms'] }}"
+            data-plan="/assets/media/nidum-sempach-{{ AppHelper::sanitizeApartmentTitle($a['title']) }}.pdf">
+            <td>{{ $a['title'] }}</td>
+            <td>{{ $a['floor'] }}</td>
+            <td>{{ $a['rooms'] }}</td>
+            <td>{{ $a['area'] }}</td>
             <td class="align-right hide-mobile">
-              @if ($a->state == 2 || $a->state == 3)
+              @if ($a['object_state'] != 'free')
                –
               @else
-                {{$a->rent_net}}
+                {{ AppHelper::apartmentCostsToDecimal($a['rentalgross_net']) }}
               @endif
             </td>
             <td class="align-right hide-mobile">
-              @if ($a->state == 2 || $a->state == 3)
+              @if ($a['object_state'] != 'free')
                –
               @else
-                {{$a->additional_cost}}
+                {{ AppHelper::apartmentCostsToDecimal($a['rentalgross'] - $a['rentalgross_net']) }}
               @endif
             </td>
             <td class="align-right">
-              @if ($a->state == 2)
+              @if ($a['object_state'] == 'rented')
                 reserviert
-              @elseif ($a->state == 3)
+              @elseif ($a['object_state'] == 'reserved')
                 vermietet
               @else
-                {{$a->rent_gross}}
+                {{ AppHelper::apartmentCostsToDecimal($a['rentalgross']) }}
               @endif
             </td>
             <td class="align-right apartement-download">
-              <a href="/assets/media/billroth-minerva-{{$a->number}}.pdf" target="_blank" title="Download Grundriss {{$a->number}}">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 142"><path d="M99.9,125.1H0v16.6H99.9ZM98.2,58.8a6.4,6.4,0,0,0-9.2,0L56.4,91.3V6.6a6.6,6.6,0,1,0-13.1,0V91.3L11.2,59.2a6.7,6.7,0,0,0-9.3,0,6.7,6.7,0,0,0,0,9.3l43.3,43.3.5.4c.1.1.2.1.2.2l.3.2.3.2h.3l.3.2h5.5l.3-.2h.3l.3-.2.3-.2.2-.2.7-.6.2-.2L98.2,68.1a6.5,6.5,0,0,0,0-9.3" style="fill:#ffffff"/></svg>
+              <a href="/assets/media/nidum-sempach-{{ AppHelper::sanitizeApartmentTitle($a['title']) }}.pdf" target="_blank" title="Download Grundriss {{ $a['title'] }}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 142"><path d="M99.9,125.1H0v16.6H99.9ZM98.2,58.8a6.4,6.4,0,0,0-9.2,0L56.4,91.3V6.6a6.6,6.6,0,1,0-13.1,0V91.3L11.2,59.2a6.7,6.7,0,0,0-9.3,0,6.7,6.7,0,0,0,0,9.3l43.3,43.3.5.4c.1.1.2.1.2.2l.3.2.3.2h.3l.3.2h5.5l.3-.2h.3l.3-.2.3-.2.2-.2.7-.6.2-.2L98.2,68.1a6.5,6.5,0,0,0,0-9.3" fill="currentColor" /></svg>
               </a>
             </td>
             <td class="align-right is-last">
-              <a href="{{$a->flatfox_uri}}" target="_blank" class="btn-register">Flatfox</a>
+              <a href="{{ $a['application_form'] }}" target="_blank" class="btn-register">Formular</a>
             </td>
           </tr>
         @endforeach

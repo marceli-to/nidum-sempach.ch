@@ -30,8 +30,8 @@
                 <div class="list-item-body">
                   <div>
                     <div class="list-item-grid">
-                      <div>{{ buildings[apartement.building] }}</div>
-                      <div>{{ floors[apartement.floor] }}</div>
+                      <div>{{ apartement.building }}</div>
+                      <div>{{ apartement.floor }}</div>
                       <div>{{ apartement.number }}</div>
                       <div>{{ apartement.rooms }}</div>
                       <div>{{ apartement.square_footage }} m<sup>2</sup></div>

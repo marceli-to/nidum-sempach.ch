@@ -10,6 +10,9 @@
           <p>Die fünf Gebäude bestechen nicht nur durch eine moderne, sehr ansprechende Aussenwirkung, sondern auch durch einen ausgewogenen Wohnungsmix und einladende Aussenbereiche.</p>
           <p>Sempach ist durch die idyllische Lage am Sempachersee wie auch die historische Altstadt ein beliebter Wohn- und auch Besuchsort. Der Bahnhof Sempach-Neuenkirch, von wo aus direkte Züge nach Luzern, Zug und Olten verkehren, ist innert wenigen Minuten mit dem Bus erreichbar.</p>
           <p>Zudem ist ein Supermarkt wie auch das Seebad nur wenige Gehminuten von der Liegenschaft entfernt. Das Schulareal von Sempach mit Kindergarten, Primar- und Sekundarschule ist ebenfalls in sicherer Gehdistanz zu erreichen.</p>
+          <p>
+            <a href="#mobilitaetsangebot" title="Mobilitätsangebot" class="btn-secondary mt-12x">Mobilitätsangebot</a>
+          </p>
         </div>
         <figure class="mt-20x sm:mt-0 sm:span-6 visual">
           <picture>
@@ -65,6 +68,7 @@
   </div>
 </section>
 <section class="page-section is-dark">
+  <a name="mobilitaetsangebot"></a>
   <div class="page-inner">
     <article>
       <h1>Mobilitätsstation Nidum</h1>

@@ -17,7 +17,7 @@ var geojson = {
       coordinates: [8.194356997429832,47.127087562342375]
     },
     properties: {
-      title: 'Billroth Minerva',
+      title: 'Nidum Sempach',
       description: 'Zürich'
     }
   }]

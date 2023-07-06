@@ -96,9 +96,8 @@
             <textarea name="remarks" placeholder="Mitteilung"></textarea>
           </div>
           <div class="mt-15x sm:mt-0 sm:span-12">
-            <input type="submit" value="Absenden" class="js-btn-submit">
+            <input type="submit" value="Absenden" class="btn-secondary is-dark js-btn-submit">
           </div>
-
         </div>
       </form>
     </article>

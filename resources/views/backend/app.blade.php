@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Billroth Minerva - Administration</title>
+<title>Nidum Sempach - Administration</title>
 <link href="https://use.typekit.net/bhg6kud.css" type="text/css" rel="stylesheet" />
 <link href="{{ mix('assets/admin/css/app.css') }}" type="text/css" rel="stylesheet" />
 <meta name="csrf-token" value="{{ csrf_token() }}" />
