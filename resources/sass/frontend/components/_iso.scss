@@ -19,6 +19,7 @@
 
   > svg {
     height: auto;
+    max-width: 80%;
     width: 100%;
   }
 }
@@ -39,12 +40,6 @@
 
   &.has-active-building {
     margin-top: 20px;
-
-    svg {
-      @include bp-lg() {
-        max-width: 75%;
-      }
-    }
   }
 }
 
