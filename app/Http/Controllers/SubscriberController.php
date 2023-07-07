@@ -45,8 +45,13 @@ class SubscriberController extends Controller
     $subscriber->remarks    = isset($request->remarks) ? $request->remarks : NULL;
     $subscriber->save();
 
-    // send mail to owner
-    Mail::to(env('MAIL_TO'))->send(new ConfirmationOwner($subscriber));
+    // send mail to owner, wrap it in a try catch block to prevent errors
+    try {
+      Mail::to($subscriber->email)->send(new ConfirmationSubscriber($subscriber));
+    } 
+    catch (\Exception $e) {
+      \Log::error($e->getMessage());
+    }
 
     // redirect status
     return redirect()->route('page_contact_subscribed');
