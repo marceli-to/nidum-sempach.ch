@@ -1,4 +1,5 @@
 @extends('frontend.layout.app')
+@section('seo_title', 'Angebot')
 @section('content')
 <section class="page-section is-dark">
   <div class="page-inner">

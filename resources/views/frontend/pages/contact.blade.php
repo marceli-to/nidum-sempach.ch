@@ -1,4 +1,5 @@
 @extends('frontend.layout.app')
+@section('seo_title', 'Kontakt')
 @section('content')
 <section class="page-section is-light">
   <div class="page-inner">

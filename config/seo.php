@@ -22,6 +22,6 @@ return [
   |
   */
 
-  'description' => 'Mit dem Projekt Billroth / Minerva entstehen beim Hegibachplatz an zentraler und dennoch ruhiger Lage im Zürcher Kreis 7 34 attraktive 2.5 – 4.5-Zimmerwohnungen, welche ab 1. September 2022 bezugsbereit sind.',   
+  'description' => 'Mit dem Projekt Nidum entstehen an der Hubelstrasse 3a–e an schöner und ruhiger Lage nahe dem Sempachersee 52 attraktive und familienfreundliche 2.5 bis 5.5-Zimmerwohnungen, welche ab Frühling 2024 bezugsbereit sind.',   
 
 ];
