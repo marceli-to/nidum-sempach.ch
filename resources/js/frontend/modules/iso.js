@@ -31,16 +31,29 @@ var Iso = (function() {
   var _bind = function() {
 
     // on hover on list, add 'has-active-building' class to wrapper
+    // check if selector exists
+    if (!document.querySelector(selectors.list)) {
+      return;
+    }
+
     document.querySelector(selectors.list).addEventListener('mouseenter', function() {
       document.querySelector(selectors.overview).classList.add(classes.hasActiveBuilding);
     });
 
     // remove class on mouseleave
+    // check if selector exists
+    if (!document.querySelector(selectors.list)) {
+      return;
+    }
     document.querySelector(selectors.list).addEventListener('mouseleave', function() {
       document.querySelector(selectors.overview).classList.remove(classes.hasActiveBuilding);
     });
 
     // show building on hover
+    // check if selector exists
+    if (!document.querySelector(selectors.listItem)) {
+      return;
+    }
     document.querySelectorAll(selectors.listItem).forEach(function(item) {
       item.addEventListener('mouseenter', function() {
         document.querySelector('[data-iso-building-overview="' + item.dataset.building + '"]').classList.add(classes.activeBuilding);

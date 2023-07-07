@@ -14,7 +14,7 @@ var Selection = (function() {
     table:    '.js-selection-table',
     btnClear: '.js-selection-clear',
     btnHide: '.js-selection-hide',
-    listItem: '.js-list-item',
+    listItem: '[data-iso-list-item]',
     isoItem:  'g[data-number]'
   };
 

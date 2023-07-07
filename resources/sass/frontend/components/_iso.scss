@@ -8,10 +8,14 @@
 // Wrapper
 [data-iso-wrapper] {
   align-items: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: sticky;
   top: 25px;
+
+  @include bp-md() {
+    display: flex;
+  }
 
   > svg {
     height: auto;
@@ -35,9 +39,11 @@
   &.has-active-building {
     margin-top: 25px;
 
-    svg {
-      max-width: 60%;
-    }
+    // svg {
+    //   @include bp-lg() {
+    //     max-width: 60%;
+    //   }
+    // }
   }
 }
 

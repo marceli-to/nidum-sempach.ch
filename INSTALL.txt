@@ -12,5 +12,8 @@ https://github.com/marceli-to/web.billrothminerva.ch
 
 ssh:
 
-ssh billrothminerva@billrothminerva.ch -p2121
+ssh nidum-sempach.ch@nidum-sempach.ch -p 2121
 9ijgW89_3&R4lz2y
+
+server ip: 
+ssh nidum-sempach.ch@46.231.207.2 -p 2121
