@@ -39,9 +39,9 @@ var Filter = (function() {
 
     if (val == 'NULL') {
       delete userFilter[type];
-      if (type == 'floor') {
-        _showFloors();
-      }
+      // if (type == 'floor') {
+      //   _showFloors();
+      // }
     }
     else {
       userFilter[type] = String(val);
@@ -55,9 +55,19 @@ var Filter = (function() {
       $.each(userFilter, function(k,v){
         if (v.length > 0) {
           attrString += '[data-'+k+'="'+v+'"]';
-          if (k == 'floor') {
-            _hideFloors(v);
-          }
+          // console.log(k, v);
+
+          // if (k == 'building') {
+          //   // remove active class from all buildings
+          //   document.querySelectorAll('[data-iso-building-overview]').forEach(function(building) {
+          //     building.classList.remove('is-active-building');
+          //   });
+          //   document.querySelector('[data-iso-building-overview="' + v + '"]').classList.add('is-active-building');
+          // }
+
+          // if (k == 'floor') {
+          //   _hideFloors(v);
+          // }
         }
       });
 
@@ -75,29 +85,29 @@ var Filter = (function() {
     userFilter = {};
     $('select').prop('selectedIndex', 0);
     _filter();
-    _showFloors();
+    //_showFloors();
   };
 
-  var _hideFloors = function(targetFloor) {
-      _showFloors();
-      let floors = document.querySelectorAll('g[data-floor]');
-      floors.forEach(floor => {
-        if (floor.dataset.floor > targetFloor) {
-          let f = document.querySelector('g[data-floor="'+ floor.dataset.floor +'"]');
-          f.style.display = 'none';
-          f.classList.add('is-locked');
-        }
-      });
-  };
+  // var _hideFloors = function(targetFloor) {
+  //   _showFloors();
+  //   let floors = document.querySelectorAll('g[data-floor]');
+  //   floors.forEach(floor => {
+  //     if (floor.dataset.floor > targetFloor) {
+  //       let f = document.querySelector('g[data-floor="'+ floor.dataset.floor +'"]');
+  //       f.style.display = 'none';
+  //       f.classList.add('is-locked');
+  //     }
+  //   });
+  // };
 
-  var _showFloors = function() {
-    let floors = document.querySelectorAll('g[data-floor]');
-    floors.forEach(floor => {
-      let f = document.querySelector('g[data-floor="'+ floor.dataset.floor +'"]');
-      f.style.display = 'block';
-      f.classList.remove('is-locked');
-    });
-  }
+  // var _showFloors = function() {
+  //   let floors = document.querySelectorAll('g[data-floor]');
+  //   floors.forEach(floor => {
+  //     let f = document.querySelector('g[data-floor="'+ floor.dataset.floor +'"]');
+  //     f.style.display = 'block';
+  //     f.classList.remove('is-locked');
+  //   });
+  // }
 
 
 /* --------------------------------------------------------------
