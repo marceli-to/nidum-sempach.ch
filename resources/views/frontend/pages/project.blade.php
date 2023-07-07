@@ -18,8 +18,8 @@
           <picture>
             <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-kueche-essen-md.jpg">
             <img src="/assets/media/nidum-sempach-kueche-essen.jpg" 
-              alt="Projekt - Nidum – Zuhause am See" 
-              title="Projekt - Nidum – Zuhause am See" 
+              alt="Projekt - Nidum Sempach – Zuhause am See" 
+              title="Projekt - Nidum Sempach – Zuhause am See" 
               height="900" 
               width="492">
           </picture>
@@ -46,8 +46,8 @@
             <picture>
               <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-wohnzimmer-md.jpg">
               <img src="/assets/media/nidum-sempach-wohnzimmer.jpg" 
-                alt="Projekt - Nidum – Zuhause am See" 
-                title="Projekt - Nidum – Zuhause am See" 
+                alt="Projekt - Nidum Sempach – Zuhause am See" 
+                title="Projekt - Nidum Sempach – Zuhause am See" 
                 height="900" 
                 width="492">
             </picture>
@@ -56,8 +56,8 @@
             <picture>
               <source media="(min-width: 900px)" srcset="/assets/media/nidum-sempach-badezimmer-md.jpg">
               <img src="/assets/media/nidum-sempach-badezimmer.jpg" 
-                alt="Projekt - Nidum – Zuhause am See" 
-                title="Projekt - Nidum – Zuhause am See" 
+                alt="Projekt - Nidum Sempach – Zuhause am See" 
+                title="Projekt - Nidum Sempach – Zuhause am See" 
                 height="900" 
                 width="492">
             </picture>

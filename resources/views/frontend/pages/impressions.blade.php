@@ -11,23 +11,23 @@
     <article class="grid-2x1">
       <div class="span">
         <figure class="visual is-gallery">
-          <img src="/assets/media/billroth-minerva-wohnen-4.jpg" width="1200" height="848" alt="Wohnzimmer - Nidum – Zuhause am See">
+          <img src="/assets/media/billroth-minerva-wohnen-4.jpg" width="1200" height="848" alt="Wohnzimmer - Nidum Sempach – Zuhause am See">
         </figure>
         <figure class="visual is-gallery">
-          <img src="/assets/media/billroth-minerva-schlafzimmer-1.jpg" width="1200" height="848" alt="Schlafzimmer - Nidum – Zuhause am See">
-        </figure>
-      </div>
-      <div class="span">
-        <figure class="visual is-gallery">
-          <img src="/assets/media/billroth-minerva-buero-2.jpg" width="1200" height="848" alt="Büro - Nidum – Zuhause am See">
-        </figure>
-        <figure class="visual is-gallery">
-          <img src="/assets/media/billroth-minerva-kueche-3.jpg" width="1200" height="848" alt="Wohnen/Essen - Nidum – Zuhause am See">
+          <img src="/assets/media/billroth-minerva-schlafzimmer-1.jpg" width="1200" height="848" alt="Schlafzimmer - Nidum Sempach – Zuhause am See">
         </figure>
       </div>
       <div class="span">
         <figure class="visual is-gallery">
-          <img src="/assets/media/billroth-minerva-bad-5.jpg" width="1200" height="848" alt="Badezimmer - Nidum – Zuhause am See">
+          <img src="/assets/media/billroth-minerva-buero-2.jpg" width="1200" height="848" alt="Büro - Nidum Sempach – Zuhause am See">
+        </figure>
+        <figure class="visual is-gallery">
+          <img src="/assets/media/billroth-minerva-kueche-3.jpg" width="1200" height="848" alt="Wohnen/Essen - Nidum Sempach – Zuhause am See">
+        </figure>
+      </div>
+      <div class="span">
+        <figure class="visual is-gallery">
+          <img src="/assets/media/billroth-minerva-bad-5.jpg" width="1200" height="848" alt="Badezimmer - Nidum Sempach – Zuhause am See">
         </figure>
       </div>
     </article>

@@ -11,7 +11,7 @@ return [
   |
   */
 
-  'title' => 'Nidum – Zuhause am See',
+  'title' => 'Nidum Sempach – Zuhause am See',
 
   /*
   |--------------------------------------------------------------------------

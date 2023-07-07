@@ -2949,7 +2949,7 @@ var staticRenderFns = [function () {
       src: "/assets/img/logo-billroth-minerva.svg",
       height: "39",
       width: "228",
-      alt: "Nidum – Zuhause am See"
+      alt: "Nidum Sempach – Zuhause am See"
     }
   })]);
 }, function () {

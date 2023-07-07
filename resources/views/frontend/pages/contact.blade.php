@@ -4,7 +4,7 @@
   <div class="page-inner">
     @if (isset($showAlert))
       <div class="alert-success ">
-        <p>Vielen Dank für Ihr Interesse an einer Wohnung in der Liegenschaft Nidum – Zuhause am See.</p>
+        <p>Vielen Dank für Ihr Interesse an einer Wohnung in der Liegenschaft Nidum Sempach – Zuhause am See.</p>
         <p>Wir werden Ihre Anfrage so schnell als möglich bearbeiten.</p>
       </div>
     @endif

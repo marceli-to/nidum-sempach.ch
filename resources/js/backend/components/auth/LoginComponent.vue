@@ -2,7 +2,7 @@
   <div class="container-auth">
     <main class="content-auth" role="main">
       <div class="brand is-login">
-        <img src="/assets/img/logo-billroth-minerva.svg" height="39" width="228" class="logo" alt="Nidum – Zuhause am See">
+        <img src="/assets/img/logo-billroth-minerva.svg" height="39" width="228" class="logo" alt="Nidum Sempach – Zuhause am See">
       </div>
       <header class="auth-header">
         <h1>Login</h1>
