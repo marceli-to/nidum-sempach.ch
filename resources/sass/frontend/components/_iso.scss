@@ -5,40 +5,89 @@
  *
  */
 
-.iso-wrapper {
+// Wrapper
+[data-iso-wrapper] {
+  align-items: center;
   display: flex;
-  justify-content: center;
-  padding: 10px 20px 30px 0;
+  flex-direction: column;
   position: sticky;
   top: 25px;
 
+  > svg {
+    height: auto;
+    width: 100%;
+  }
+}
+
+// Overview
+[data-iso-overview] {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  width: 100%;
+
   svg {
-    @extend %is-responsive;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
 
-    &.iso--billroth {
-      max-width: 360px;
-    }
+  &.has-active-building {
+    margin-top: 25px;
 
-    &.iso--minerva {
-      max-width: 420px;
-    }
-
-    @include bp-md() {
-      max-width: none !important;
+    svg {
+      max-width: 60%;
     }
   }
 }
 
+// Buildings
+[data-iso-building] {
+  display: none;
 
-.is-active-iso {
-
-  cursor: pointer;
-
-  .iso-b-0 {
-    fill: $color-beige;
+  &.is-visible-building {
+    display: block;
   }
+}
 
-  .iso-m-0 {
-    fill: $color-beige;
+// Floors
+[data-floor] {
+  &.is-hidden {
+    display: none;
+  }
+}
+
+// Building item classes
+.iso-cls-1 {
+  fill: #878379;
+}
+
+.iso-cls-1, 
+.iso-cls-2 {
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.iso-cls-2 {
+  fill: #ddd3c2;
+}
+
+.iso-cls-3 {
+  fill: none;
+  isolation: isolate;
+}
+
+.is-active-building {
+  .iso-cls-1,
+  .iso-cls-2 {
+    fill: $color-dark-green;
+  }
+}
+
+.is-active-item {
+  .iso-cls-1,
+  .iso-cls-2 {
+    fill: $color-dark-green;
   }
 }

@@ -8,7 +8,7 @@ var Filter = (function() {
   var selectors = {
     body:  	  	 	'body',
     filterSelect: '.js-filter-select',
-    filterItem:   '.js-list-item',
+    filterItem:   '[data-iso-list-item]',
     btnReset:     '.js-btn-reset',
   };
 
@@ -55,7 +55,6 @@ var Filter = (function() {
       $.each(userFilter, function(k,v){
         if (v.length > 0) {
           attrString += '[data-'+k+'="'+v+'"]';
-
           if (k == 'floor') {
             _hideFloors(v);
           }

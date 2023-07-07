@@ -60,7 +60,7 @@ section {
   }
 
   &.is-dark {
-    background-color: $color-dark-green;
+    background-color: $color-green;
     color: $color-white;
 
     h1 {
@@ -78,14 +78,14 @@ section {
 
   &.is-light {
     background-color: $color-beige;
-    color: $color-dark-green;
+    color: $color-green;
 
     h1 {
-      color: $color-dark-green;
+      color: $color-green;
     }
 
     a {
-      color: $color-dark-green;
+      color: $color-green;
       text-decoration: underline;
       &:hover {
         text-decoration: none;

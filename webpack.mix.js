@@ -22,8 +22,8 @@ mix.webpackConfig({
  */
 
 // Backend
-mix.js('resources/js/backend/app.js', 'public/assets/admin/js');
-mix.sass('resources/sass/backend/app.scss', 'public/assets/admin/css').options({processCssUrls: false});
+// mix.js('resources/js/backend/app.js', 'public/assets/admin/js');
+// mix.sass('resources/sass/backend/app.scss', 'public/assets/admin/css').options({processCssUrls: false});
 
 // Frontend
 mix.js('resources/js/frontend/app.js', 'public/assets/js').version();

@@ -10,7 +10,7 @@ a.btn-secondary {
   background-color: $color-beige;
   border-radius: 2px;
   border: none !important;
-  color: $color-dark-green !important;
+  color: $color-green !important;
   display: inline-flex;
   height: 35px;
   @include font-nort-bold();
@@ -28,7 +28,7 @@ a.btn-secondary {
   }
 
   &.is-dark {
-    background-color: $color-dark-green;
+    background-color: $color-green;
     color: $color-white !important;
   }
 }

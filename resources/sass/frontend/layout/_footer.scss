@@ -5,7 +5,7 @@
  */
 
 footer.site-footer {
-  background-color: $color-dark-green;
+  background-color: $color-green;
   color: $color-white;
   @include font-size($fs-md);
   @include responsive-prop('padding-top', $space-md);
@@ -35,7 +35,7 @@ footer.site-footer {
 
   .footer-copy {
     background-color: $color-beige;
-    color: $color-dark-green;
+    color: $color-green;
     @include font-size($fs-xs);
     padding: 5px 0;
 
@@ -44,7 +44,7 @@ footer.site-footer {
     }
 
     a {
-      color: $color-dark-green;
+      color: $color-green;
       display: inline-block;
       margin-right: 15px;
       text-decoration: none;

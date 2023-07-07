@@ -13,49 +13,49 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-  return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//   return $request->user();
+// });
 
 
-/**
- * Protected Api routes
- */
+// /**
+//  * Protected Api routes
+//  */
 
-Route::middleware('auth:api')->group(function() {
+// Route::middleware('auth:api')->group(function() {
     
-  /**
-   * Post routes
-   */
+//   /**
+//    * Post routes
+//    */
 
-  Route::get('apartements/get', 'Api\ApartementController@get');
-  Route::post('apartement/create', 'Api\ApartementController@store');
-  Route::get('apartement/edit/{apartement}', 'Api\ApartementController@edit');
-  Route::post('apartement/update/{apartement}', 'Api\ApartementController@update');
-  Route::get('apartement/status/{apartement}', 'Api\ApartementController@status');
-  Route::delete('apartement/destroy/{apartement}', 'Api\ApartementController@destroy');
+//   Route::get('apartements/get', 'Api\ApartementController@get');
+//   Route::post('apartement/create', 'Api\ApartementController@store');
+//   Route::get('apartement/edit/{apartement}', 'Api\ApartementController@edit');
+//   Route::post('apartement/update/{apartement}', 'Api\ApartementController@update');
+//   Route::get('apartement/status/{apartement}', 'Api\ApartementController@status');
+//   Route::delete('apartement/destroy/{apartement}', 'Api\ApartementController@destroy');
 
-});
+// });
 
-/**
- * Auth routes
- */
+// /**
+//  * Auth routes
+//  */
 
-Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
-  Route::post('login', 'AuthController@login');
-  Route::post('logout', 'AuthController@logout');
-  Route::post('refresh', 'AuthController@refresh');
-  Route::post('me', 'AuthController@me');
-});
+// Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
+//   Route::post('login', 'AuthController@login');
+//   Route::post('logout', 'AuthController@logout');
+//   Route::post('refresh', 'AuthController@refresh');
+//   Route::post('me', 'AuthController@me');
+// });
 
-/**
- * Fallback if no route is defined
- */
+// /**
+//  * Fallback if no route is defined
+//  */
 
-Route::fallback(function(){
-  return response()->json(
-    ['message' => 'Page Not Found. If error persists, contact m@marceli.to'],
-    404
-  );
-});
+// Route::fallback(function(){
+//   return response()->json(
+//     ['message' => 'Page Not Found. If error persists, contact m@marceli.to'],
+//     404
+//   );
+// });
 

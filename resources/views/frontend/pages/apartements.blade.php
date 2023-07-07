@@ -99,7 +99,7 @@
           <a href="javascript:;" class="btn-selection is-hide js-selection-hide">Auswahl verbergen</a>
         </div>
       </div>
-      @include('frontend.partials.buildings')
+      @include('frontend.partials.apartments.apartments')
     </article>
   </div>
 </section>

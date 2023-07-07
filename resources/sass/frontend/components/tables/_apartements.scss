@@ -66,15 +66,15 @@ table.apartements {
       cursor: pointer;
 
       td {
-        color: $color-dark-green;
+        color: $color-green;
       }
 
       svg {
-        color: $color-dark-green;
+        color: $color-green;
       }
 
       .btn-register {
-        color: $color-dark-green !important;
+        color: $color-green !important;
       }
     }
   }
@@ -104,7 +104,7 @@ table.apartements {
     tr {
       &:hover {
         svg {
-          color: $color-dark-green;
+          color: $color-green;
         }
       }
     }
@@ -113,7 +113,7 @@ table.apartements {
 
 .apartements-selection {
   background-color: $color-beige;
-  color: $color-dark-green;
+  color: $color-green;
   bottom: 0;
   left: 0;
   @include responsive-prop('padding-bottom', $space-sm);
@@ -129,7 +129,7 @@ table.apartements {
   table.apartements {
     max-width: 640px;
     tr {
-      border-bottom: 1px solid $color-dark-green;
+      border-bottom: 1px solid $color-green;
     }
   }
 

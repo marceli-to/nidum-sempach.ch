@@ -6,23 +6,19 @@ var Iso = (function() {
     
   // selectors 	
   var selectors = {
-    body:     'body',
-    iso:      '.js-iso',
-    listItem: '.js-list-item',
-    isoItem:  'g[data-number]',
+    wrapper: '[data-iso-wrapper]',
+    list: '[data-iso-list] tbody',
+    listItem: '[data-iso-list-item]',
+    overview: '[data-iso-overview]',
+    overviewBuilding: '[data-iso-building-overview]',
   };
 
   var classes = {
-    visible: 'is-visible',
-    active: 'is-active',
+    activeItem: 'is-active-item',
+    activeBuilding: 'is-active-building',
+    visibbleBuilding: 'is-visible-building',
+    hasActiveBuilding: 'has-active-building',
   };
-
-  // media queries
-  var mq = {
-    xs: window.matchMedia("(min-width: 660px)"),
-  };
-
-  var currentFloor;
 
   /* --------------------------------------------------------------
   * METHODS
@@ -34,61 +30,30 @@ var Iso = (function() {
 
   var _bind = function() {
 
-    // $(selectors.body).on('mouseover', selectors.listItem, function(){
-    //   let floors = document.querySelectorAll('g[data-floor]'), 
-    //   targetFloor  = $(this).data('floor'),
-    //   targetObject = $(this).data('number');
-    //   currentFloor = targetFloor;
-
-    //   console.log(targetObject);
-
-    //   floors.forEach(floor => {
-    //     let g = document.querySelector('g[data-number="'+ targetObject +'"]');
-    //     g.classList.add('is-active-iso');
-
-    //     if (floor.dataset.floor > targetFloor) {
-    //       let f = document.querySelector('g[data-floor="'+ floor.dataset.floor +'"]');
-    //       f.style.display = 'none';
-    //     }
-    //   });
-    // });
-
-    // $(selectors.body).on('mouseleave', selectors.listItem, function(){
-    //   let floors = document.querySelectorAll('g[data-floor]'),
-    //       targetFloor = $(this).data('floor'),
-    //       targetObject = $(this).data('number');
-
-    //   if (currentFloor == targetFloor) {
-    //     floors.forEach(floor => {
-    //       let g = document.querySelector('g[data-object="'+ targetObject +'"]');
-    //       g.classList.remove('is-active-iso');
-
-    //       if (floor.dataset.floor > targetFloor) {
-    //         let f = document.querySelector('g[data-floor="'+ floor.dataset.floor+'"]');
-    //         if (!f.classList.contains('is-locked')) {
-    //           f.style.display = 'block';
-    //         }
-    //       }
-    //     });
-    //   }
-    // });
-
-    $(selectors.body).on('mouseover', selectors.isoItem, function(){
-      $(this).addClass('is-active-iso');
-      $('tr[data-number="'+$(this).data('number')+'"]').addClass('is-active-row');
+    // on hover on list, add 'has-active-building' class to wrapper
+    document.querySelector(selectors.list).addEventListener('mouseenter', function() {
+      document.querySelector(selectors.overview).classList.add(classes.hasActiveBuilding);
     });
 
-    $(selectors.body).on('mouseout', selectors.isoItem, function(){
-      $(this).removeClass('is-active-iso');
-      $('tr[data-number="'+$(this).data('number')+'"]').removeClass('is-active-row');
+    // remove class on mouseleave
+    document.querySelector(selectors.list).addEventListener('mouseleave', function() {
+      document.querySelector(selectors.overview).classList.remove(classes.hasActiveBuilding);
     });
 
-    $(selectors.body).on('mouseover', selectors.listItem, function(){
-      $('g[data-number="'+$(this).data('number')+'"]').addClass('is-active-iso');
-    });
+    // show building on hover
+    document.querySelectorAll(selectors.listItem).forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        document.querySelector('[data-iso-building-overview="' + item.dataset.building + '"]').classList.add(classes.activeBuilding);
+        document.querySelector('[data-iso-building="' + item.dataset.building + '"]').classList.add(classes.visibbleBuilding);
+        document.querySelector('[data-iso-building="' + item.dataset.building + '"] [data-name="' + item.dataset.number + '"]').classList.add(classes.activeItem);
+      });
 
-    $(selectors.body).on('mouseout', selectors.listItem, function(){
-      $('g[data-number="'+$(this).data('number')+'"]').removeClass('is-active-iso');
+      // hide building on mouseleave
+      item.addEventListener('mouseleave', function() {
+        document.querySelector('[data-iso-building-overview="' + item.dataset.building + '"]').classList.remove(classes.activeBuilding);
+        document.querySelector('[data-iso-building="' + item.dataset.building + '"]').classList.remove(classes.visibbleBuilding);
+        document.querySelector('[data-iso-building="' + item.dataset.building + '"] [data-name="' + item.dataset.number + '"]').classList.remove(classes.activeItem);
+      });
     });
   };
 
