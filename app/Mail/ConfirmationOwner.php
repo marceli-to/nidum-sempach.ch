@@ -30,11 +30,11 @@ class ConfirmationOwner extends Mailable
    */
   public function build()
   {
-    return $this->from(['address' => 'no-reply@billrothminerva.ch', 'name' => 'Nidum Sempach'])
+    return $this->from(['address' => 'no-reply@nidum-sempach.ch', 'name' => 'Nidum Sempach'])
                 ->subject('Interessent Nidum Sempach')
                 ->with([
                   'data' => $this->data,
                 ])
-                ->text('mails.confirmation-owner-json');
+                ->markdown('mails.confirmation-owner');
   }
 }

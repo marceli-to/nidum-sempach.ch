@@ -1,14 +1,14 @@
 @component('mail::message')
 # Interessent
 
-Interessiert an: {{ $client->interest }}<br>
-Name: {{ $client->firstname }} {{ $client->name }}<br>
-Strasse/Nr.: {{ $client->street }}<br>
-Ort: {{ $client->city }}<br>
-E-Mail: {{ $client->email }}<br>
-Telefon: {{ $client->phone }}<br>
+Interessiert an: {{ $data->interest }}<br><br>
+Name: {{ $data->firstname }} {{ $data->name }}<br><br>
+Strasse/Nr.: {{ $data->street }}<br><br>
+Ort: {{ $data->location }}<br><br>
+E-Mail: {{ $data->email }}<br><br>
+Telefon: {{ $data->phone }}<br><br>
 Mitteilung:<br>
-{{ $client->remarks }}<br><br>
+{{ $data->remarks }}<br><br>
 
 
 Freundliche Grüsse<br>

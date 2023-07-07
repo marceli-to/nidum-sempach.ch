@@ -15,6 +15,7 @@
       <p>Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>
       <form method="POST" action="{{ route('page_contact_subscribe') }}" class="contact-form js-validate">
         @csrf
+        <x-honeypot />
         <p><strong>Ich interessiere mich für folgende Wohnungen (bitte auswählen):</strong></p>
         @if ($errors->has('interest'))
           <div class="error-message">{{ $errors->first('interest') }}</div>

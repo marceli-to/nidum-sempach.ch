@@ -45,24 +45,8 @@ class SubscriberController extends Controller
     $subscriber->remarks    = isset($request->remarks) ? $request->remarks : NULL;
     $subscriber->save();
 
-    // mail data
-    // $mail_data = [
-    //   'refProperty' => '2100',
-    //   'refHouse' => '99',
-    //   'refObject' => '9999',
-    //   'inquiryFirstname' => $subscriber->firstname,
-    //   'inquiryName' => $subscriber->name,
-    //   'inquiryStreet' => $subscriber->street,
-    //   'inquiryZip' => $subscriber->zip,
-    //   'inquiryLocation' => $subscriber->location,
-    //   'inquiryEmail' => $subscriber->email,
-    //   'inquiryInterest' => $subscriber->interest,
-    //   'inquiryPhone' => $subscriber->phone,
-    //   'remarks' => str_replace("\n", "\r\n", str_replace("\r", '', $subscriber->remarks)),
-    // ];
-
     // send mail to owner
-    // Mail::to(env('MAIL_RECIPIENT'))->send(new ConfirmationOwner(json_encode($mail_data)));
+    Mail::to(env('MAIL_TO'))->send(new ConfirmationOwner($subscriber));
 
     // redirect status
     return redirect()->route('page_contact_subscribed');

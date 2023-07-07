@@ -1,4 +1,5 @@
 <?php
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ Route::get('/impressionen', 'PageController@impressions')->name('page_impression
 Route::get('/angebot', 'ApartementController@index')->name('page_apartements');
 Route::get('/kontakt', 'ContactController@index')->name('page_contact');
 Route::get('/kontakt/danke', 'ContactController@subscribed')->name('page_contact_subscribed');
-Route::post('/subscribe', 'SubscriberController@store')->name('page_contact_subscribe');
+Route::post('/subscribe', 'SubscriberController@store')->name('page_contact_subscribe')->middleware(ProtectAgainstSpam::class);;
 Route::get('/datenschutz', 'PageController@privacy')->name('page_privacy');
 Route::get('/impressum', 'PageController@imprint')->name('page_imprint');
 
