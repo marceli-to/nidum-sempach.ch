@@ -15,7 +15,7 @@
     <div>
       <a href="/impressum">Impressum</a>
       <a href="/datenschutz">Datenschutz</a>
-      <a href="https://www.stoz.ch" rel="noopener">design by stoz</a>
+      <a href="https://www.stoz.ch" rel="noopener" target="_blank">design by stoz</a>
     </div>
   </div>
 </footer>
