@@ -28,6 +28,7 @@
   display: flex;
   justify-content: flex-end;
   height: auto;
+  margin-top: 10px;
   width: 100%;
 
   svg {
@@ -37,13 +38,13 @@
   }
 
   &.has-active-building {
-    margin-top: 25px;
+    margin-top: 20px;
 
-    // svg {
-    //   @include bp-lg() {
-    //     max-width: 60%;
-    //   }
-    // }
+    svg {
+      @include bp-lg() {
+        max-width: 75%;
+      }
+    }
   }
 }
 

@@ -5,8 +5,7 @@ Add admin user:
 3) DB::table('users')->insert(['name'=>'Dennis','email'=>'dennis@stoz.ch','password'=>Hash::make('vmr6wdD&IGnE-+&G%gdr')])
 4) DB::table('users')->insert(['name'=>'Chantal Bieri','email'=>'chantal.bieri@apleona.com','password'=>Hash::make('hhIsXmul_fwELcc3cT5N')])
 
-php composer.phar install --optimize-autoloader --no-dev
-
+/opt/php81/bin/php -d memory_limit=2048M /bin/composer install --optimize-autoloader --no-dev --ignore-platform-reqs
 
 https://github.com/marceli-to/web.billrothminerva.ch
 
