@@ -22,10 +22,10 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
 <script src="{{ mix('assets/js/app.js') }}" type="text/javascript"></script>
-{{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179295208-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P86X7YEH9N"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-179295208-1');
-</script> --}}
+gtag('config', 'G-P86X7YEH9N');
+</script>
