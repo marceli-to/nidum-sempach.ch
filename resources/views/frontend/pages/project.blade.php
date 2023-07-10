@@ -42,7 +42,7 @@
           <p>Zudem ist jede Wohnung mit einem eigenen Waschturm im Reduit ausgestattet.</p>
           <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
           <p>
-            <a href="/assets/media/nidum-sempach-nidum-sempach-facts-and-figures.pdf" target="_blank" class="btn-secondary is-dark mt-12x" title="Download Facts & Figures">Facts & Figures</a>
+            <a href="/assets/media/nidum-sempach-facts-and-figures.pdf" target="_blank" class="btn-secondary is-dark mt-12x" title="Download Facts & Figures">Facts & Figures</a>
           </p>
         </div>
         <div class="sm:span-6">
