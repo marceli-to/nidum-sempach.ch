@@ -7,7 +7,7 @@
       <h1>Projekt</h1>
       <div class="sm:grid sm:grid-cols-12 sm:grid-gap">
         <div class="sm:span-6">
-          <p>Mit dem Projekt Nidum entstehen an der Hubelstrasse 3a–e an schöner und ruhiger Lage nahe dem Sempachersee 52 attraktive und familienfreundliche 2.5bis 5.5-Zimmerwohnungen, welche ab April (Häuser a, d, e) und Mai (Häuser b, c) 2024 bezugsbereit sind.</p>
+          <p>Mit dem Projekt Nidum entstehen an der Hubelstrasse 3a–e an schöner und ruhiger Lage nahe dem Sempachersee 52 attraktive und familienfreundliche 2.5 bis 5.5-Zimmerwohnungen, welche ab April (Häuser a, d, e) und Mai (Häuser b, c) 2024 bezugsbereit sind.</p>
           <p>Die fünf Gebäude bestechen nicht nur durch eine moderne, sehr ansprechende Aussenwirkung, sondern auch durch einen ausgewogenen Wohnungsmix und einladende Aussenbereiche.</p>
           <p>Sempach ist durch die idyllische Lage am Sempachersee wie auch die historische Altstadt ein beliebter Wohn- und auch Besuchsort. Der Bahnhof Sempach-Neuenkirch, von wo aus direkte Züge nach Luzern, Zug und Olten verkehren, ist innert wenigen Minuten mit dem Bus erreichbar.</p>
           <p>Zudem ist ein Supermarkt wie auch das Seebad nur wenige Gehminuten von der Liegenschaft entfernt. Das Schulareal von Sempach mit Kindergarten, Primar- und Sekundarschule ist ebenfalls in sicherer Gehdistanz zu erreichen.</p>
@@ -41,6 +41,9 @@
           <p>Die modernen Bäder sind mit Keramikplatten in Taupe ausgestattet und verfügen über eine Dusche oder Badewanne.</p>
           <p>Zudem ist jede Wohnung mit einem eigenen Waschturm im Reduit ausgestattet.</p>
           <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
+          <p>
+            <a href="/assets/media/nidum-sempach-nidum-sempach-facts-and-figures.pdf" target="_blank" class="btn-secondary is-dark mt-12x" title="Download Facts & Figures">Facts & Figures</a>
+          </p>
         </div>
         <div class="sm:span-6">
           <figure class="mt-20x sm:mt-0 sm:span-6 visual">
@@ -77,7 +80,7 @@
         <div class="sm:span-6">
           <strong class="text-beige">Profitieren Sie als Mieter ohne Auto vom Bonusprogramm</strong><br>
           <p>Damit Sie auch ohne eigenes Auto mobil sind, steht Ihnen eine Mobilitätsstation mit einem vielseitigen Sharing-Angebot zur Verfügung. Die gesamte Fahrzeug-Flotte ist elektrisch angetrieben und kann rund um die Uhr über die Trafikpoint-App gebucht werden. Sie bezahlen nur für die Zeit der Nutzung, Abo-Gebühren fallen keine an.</p>
-          <p>Die Sharing-Flotte verfügt über folgende Fahrzeu- ge und wird auf den Aussenparkplätzen neben der Tiefgarageneinfahrt stationiert sein:</p>
+          <p>Die Sharing-Flotte verfügt über folgende Fahrzeuge und wird auf den Aussenparkplätzen neben der Tiefgarageneinfahrt stationiert sein:</p>
           <ul>
             <li>1× E-Auto Economy</li>
             <li>1× E-Roller</li>
