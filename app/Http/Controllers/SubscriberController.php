@@ -47,7 +47,7 @@ class SubscriberController extends Controller
 
     // send mail to owner, wrap it in a try catch block to prevent errors
     try {
-      Mail::to(env('MAIL_TO'))->send(new ConfirmationSubscriber($subscriber));
+      Mail::to(env('MAIL_TO'))->send(new ConfirmationOwner($subscriber));
     } 
     catch (\Exception $e) {
       \Log::error($e->getMessage());
