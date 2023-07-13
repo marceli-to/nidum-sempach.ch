@@ -31,6 +31,7 @@ class SubscriberController extends Controller
       'location'  => 'required',
       'email'     => 'required|email',
       'interest'  => 'required|min:1',
+      'privacy'   => 'required',
     ]);
 
     // store the data

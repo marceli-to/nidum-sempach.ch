@@ -18,9 +18,9 @@
         <x-honeypot />
         <p><strong>Ich interessiere mich für folgende Wohnungen (bitte auswählen):</strong></p>
         @if ($errors->has('interest'))
-          <div class="error-message">{{ $errors->first('interest') }}</div>
+          <div class="error-message mt-10x mb-2x">{{ $errors->first('interest') }}</div>
         @else
-          <div class="error-message js-error-interest" style="display:none">Bitte mind. 1 Option auswählen</div>
+          <div class="error-message mt-10x mb-2x js-error-interest" style="display:none">Bitte mind. 1 Option auswählen</div>
         @endif
         <div class="mt-10x sm:grid sm:grid-cols-12 sm:grid-column-gap">
           <div class="sm:span-6 xs:grid xs:grid-cols-12 xs:grid-column-gap">
@@ -97,7 +97,20 @@
           <div class="mt-15x sm:mt-0 sm:span-6 relative">
             <textarea name="remarks" placeholder="Mitteilung"></textarea>
           </div>
-          <div class="mt-15x sm:mt-0 sm:span-12">
+          <div class="mt-15x sm:span-12 relative">
+            @if ($errors->has('privacy'))
+              <div class="error-message mb-15x">{{ $errors->first('privacy') }}</div>
+            @else
+              <div class="error-message mb-15x js-error-privacy" style="display:none">Bitte Datenschutzerklärung akzeptieren</div>
+            @endif
+            <div class="form-control">
+              <input type="checkbox" name="privacy" value="1" id="privacy" data-rules="required|check[privacy]">
+              <label for="privacy">
+                <span class="text">Ich habe die <a href="{{ route('page_privacy') }}" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere diese.</span>
+              </label>
+            </div>
+          </div>
+          <div class="mt-15x sm:mt-5x sm:span-12">
             <input type="submit" value="Absenden" class="btn-secondary is-dark js-btn-submit">
           </div>
         </div>

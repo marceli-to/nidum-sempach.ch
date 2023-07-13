@@ -20,7 +20,6 @@ var Validate = (function() {
   var classes = {
     hasError: 'has-error',
     loading:  'is-loading',	
-
   };
 
   // regex
@@ -96,15 +95,18 @@ var Validate = (function() {
             param    = match[1]; // set additional parameter
           }
           
-
-
           // call validation rule fn
           if (!_self[rules[z]]($(elem),param)) {
             isValid = false;
             $(elem).addClass(classes.hasError);
             $(elem).prev('.error-message').show();
             if ($(elem).is(':checkbox')) {
-              $('.js-error-interest').show();
+              if ($(elem).attr('name') == 'privacy') {
+                $('.js-error-privacy').show(); 
+              }
+              else {
+                $('.js-error-interest').show();
+              }
             }
           }
         }
@@ -196,7 +198,13 @@ var Validate = (function() {
     }
     return false;
   };
-
+  var _check = function(el,field) {
+    var fieldname = field;
+    if ($('[name="'+fieldname+'"]').is(':checked')) {
+      return true;
+    }
+    return false;
+  };
   var _at_least_one = function(el,field) {
     var fieldname = field + '[]';
     if ($('[name="'+fieldname+'"]').val() != undefined && $('[name="'+fieldname+'"]').val() != '') {
@@ -217,6 +225,7 @@ var Validate = (function() {
     valid_url: _valid_url,
     is_checked: _is_checked,
     check_one: _check_one,
+    check: _check,
     min_length: _min_length,
     max_length: _max_length,
     matches: _matches,
