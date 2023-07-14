@@ -73,6 +73,23 @@
         </div>
       </form>
 
+      <div class="apartment-details js-object-detail-wrapper">
+        <h3 data-object-detail-number></h3>
+        <span data-object-detail></span>
+        <div>
+          <div data-object-iso-wrapper>
+            @include('frontend.partials.apartments.building-a')
+            @include('frontend.partials.apartments.building-b')
+            @include('frontend.partials.apartments.building-c')
+            @include('frontend.partials.apartments.building-d')
+            @include('frontend.partials.apartments.building-e')
+          </div>
+          <div data-object-iso-overview>
+            @include('frontend.partials.apartments.buildings-all')
+          </div>
+        </div>
+      </div>
+
       <div class="apartements-selection js-selection-wrapper" style="display:none">
         <div>
           <h2>Ihre Auswahl</h2>

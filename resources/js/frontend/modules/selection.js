@@ -18,13 +18,24 @@ var Selection = (function() {
     isoItem:  'g[data-number]'
   };
 
-
   /* --------------------------------------------------------------
   * METHODS
   * ------------------------------------------------------------ */
 
   var _initialize = function() {
-    _bind();
+    if (!_isMobile()) {
+      _bind();
+    }
+
+    // on resize check again for mobile
+    $(window).on('resize', debounce(function() {
+      if (!_isMobile()) {
+        _bind();
+      }
+      else {
+        _unbind();
+      }
+    }, 250));
   };
 
   var _bind = function() {
@@ -49,22 +60,35 @@ var Selection = (function() {
     });
 
     $(selectors.body).on('click', selectors.btnClear, function(){
-      $(selectors.table).find('tr').remove();
-      $(selectors.wrapper).hide();
+      _clear();
     });
 
     $(selectors.body).on('click', selectors.btnHide, function(){
-      $(selectors.wrapper).hide();
+      _hide();
     });
-
-    // $(document).on('scroll', function() {
-    //   _hide();
-    // });
   };
 
-  var _hide = debounce(function() {
+  // create an _unbind method to remove event listeners when needed
+  var _unbind = function() {
+    _clear();
+    $(selectors.body).off('click', selectors.isoItem);
+    $(selectors.body).off('click', selectors.listItem);
+    $(selectors.body).off('click', selectors.btnClear);
+    $(selectors.body).off('click', selectors.btnHide);
+  };
+
+  var _clear = function() {
+    $(selectors.table).find('tr').remove();
+    _hide();
+  };
+
+  var _hide = function() {
     $(selectors.wrapper).hide();
-  }, 300);
+  };
+
+  var _isMobile = function() {
+    return window.matchMedia('(max-width: 1024px)').matches || window.innerWidth <= 1024;
+  };
 
   /* --------------------------------------------------------------
   * RETURN PUBLIC METHODS

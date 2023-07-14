@@ -35,5 +35,7 @@ require('./modules/filter.js');
 // Apartement selection
 require('./modules/selection.js');
 
+require('./modules/objects.js');
+
 require('./modules/swiper.js');
 

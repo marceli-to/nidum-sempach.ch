@@ -52,6 +52,42 @@
   }
 }
 
+[data-object-iso-wrapper] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include bp-md() {
+    display: none;
+  }
+}
+
+[data-object-iso-wrapper] [data-iso-building] {
+  display: none;
+
+  &.is-visible-building {
+    display: block;
+  }
+}
+
+[data-object-iso-overview] {
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  margin-top: 10px;
+  width: 100%;
+
+  svg {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  
+  @include bp-md() {
+    display: none;
+  }
+}
+
 // Floors
 [data-floor] {
   &.is-hidden {

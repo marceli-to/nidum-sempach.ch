@@ -55,19 +55,6 @@ var Filter = (function() {
       $.each(userFilter, function(k,v){
         if (v.length > 0) {
           attrString += '[data-'+k+'="'+v+'"]';
-          // console.log(k, v);
-
-          // if (k == 'building') {
-          //   // remove active class from all buildings
-          //   document.querySelectorAll('[data-iso-building-overview]').forEach(function(building) {
-          //     building.classList.remove('is-active-building');
-          //   });
-          //   document.querySelector('[data-iso-building-overview="' + v + '"]').classList.add('is-active-building');
-          // }
-
-          // if (k == 'floor') {
-          //   _hideFloors(v);
-          // }
         }
       });
 

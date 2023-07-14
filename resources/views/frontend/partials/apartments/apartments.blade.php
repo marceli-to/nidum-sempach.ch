@@ -22,11 +22,11 @@
         <th class="align-right hide-mobile">Netto MZ/Mt.</th>
         <th class="align-right hide-mobile">HK/NK</th>
         <th class="align-right">Brutto MZ/Mt.</th>
-        <th class="align-right">
+        <th class="align-right hide-mobile">
           <span class="hide-md">PDF</span>
           <span class="hide-sm">Grundriss</span>
         </th>
-        <th class="is-last">
+        <th class="is-last hide-mobile">
           <span class="hide-sm">Anmeldung</span>
         </th>
       </thead>
@@ -39,7 +39,11 @@
             data-building="{{ AppHelper::sanitizeApartmentBuilding($a['building']['building_title']) }}"
             data-state="{{ $a['object_state'] }}"
             data-rooms="{{ $a['rooms'] }}"
-            data-plan="/assets/media/nidum-sempach-{{ AppHelper::sanitizeApartmentTitle($a['title']) }}.pdf">
+            data-plan="/assets/media/nidum-sempach-{{ AppHelper::sanitizeApartmentTitle($a['title']) }}.pdf"
+            data-form="{{ $a['application_form']}}"
+            data-area="{{ $a['area'] }}"
+            data-detail-title="{{$a['title']}}"
+            data-detail-floor="{{$a['floor']}}">
             <td>{{ $a['title'] }}</td>
             <td>{{ $a['floor'] }}</td>
             <td>{{ $a['rooms'] }}</td>
@@ -67,12 +71,12 @@
                 {{ AppHelper::apartmentCostsToDecimal($a['rentalgross']) }}
               @endif
             </td>
-            <td class="align-right apartement-download">
+            <td class="align-right apartement-download hide-mobile">
               <a href="/assets/media/nidum-sempach-{{ AppHelper::sanitizeApartmentTitle($a['title']) }}.pdf" target="_blank" title="Download Grundriss {{ $a['title'] }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 142"><path d="M99.9,125.1H0v16.6H99.9ZM98.2,58.8a6.4,6.4,0,0,0-9.2,0L56.4,91.3V6.6a6.6,6.6,0,1,0-13.1,0V91.3L11.2,59.2a6.7,6.7,0,0,0-9.3,0,6.7,6.7,0,0,0,0,9.3l43.3,43.3.5.4c.1.1.2.1.2.2l.3.2.3.2h.3l.3.2h5.5l.3-.2h.3l.3-.2.3-.2.2-.2.7-.6.2-.2L98.2,68.1a6.5,6.5,0,0,0,0-9.3" fill="currentColor" /></svg>
               </a>
             </td>
-            <td class="align-right is-last">
+            <td class="align-right is-last hide-mobile">
               <a href="{{ $a['application_form'] }}" target="_blank" class="btn-register">Formular</a>
             </td>
           </tr>
