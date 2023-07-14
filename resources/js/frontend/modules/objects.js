@@ -67,7 +67,7 @@ var Objects = (function() {
     const floor = $('[data-object-iso-wrapper] [data-iso-building="' + itemData.building + '"] [data-floor="' + itemData.floor + '"]');
 
     // floor is an svg group, get all groups that are after this group and set opacity to .125
-    floor.nextAll().css('opacity', '.1');
+    floor.nextAll().css('opacity', '.2');
 
     // Add itemData to data-object-detail innerHTML
     const objectDetailInfo = itemData.rooms + '-Zimmerwohnung, ' + itemData.detailFloor + ', ' + itemData.area + ' m²';
