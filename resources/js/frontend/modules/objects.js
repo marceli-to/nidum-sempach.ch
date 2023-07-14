@@ -54,6 +54,7 @@ var Objects = (function() {
 
     _clear();
     const itemData = $(item).data();
+
    
     // Show the wrapper
     $(selectors.wrapper).addClass(classes.visible);
@@ -62,6 +63,12 @@ var Objects = (function() {
     $('[data-object-iso-overview] [data-iso-building-overview="' + item.dataset.building + '"]').addClass(classes.activeBuilding);
     $('[data-object-iso-wrapper] [data-iso-building="' + itemData.building + '"]').addClass(classes.visibleBuilding);
     $('[data-object-iso-wrapper] [data-iso-building="' + itemData.building + '"] [data-name="' + itemData.number + '"]').addClass(classes.activeItem);
+
+    const floor = $('[data-object-iso-wrapper] [data-iso-building="' + itemData.building + '"] [data-floor="' + itemData.floor + '"]');
+
+    // floor is an svg group, get all groups that are after this group and set opacity to .125
+    floor.nextAll().css('opacity', '.1');
+
 
     // Add itemData to data-object-detail innerHTML
     const objectDetailInfo = itemData.rooms + '-Zimmerwohnung, ' + itemData.detailFloor + ', ' + itemData.area + ' m²';
@@ -86,6 +93,10 @@ var Objects = (function() {
     const buildings = $('[data-object-iso-wrapper] [data-iso-building]');
     const buildingsOverview = $('[data-object-iso-overview] [data-iso-building-overview]');
     const apartments = $('[data-object-iso-wrapper] [data-iso-building] [data-name]');
+    const floors = $('[data-object-iso-wrapper] [data-iso-building] [data-floor]');
+
+    floors.css('opacity', '1');
+
     buildings.removeClass(classes.visibleBuilding)
     buildingsOverview.removeClass(classes.activeBuilding);
     apartments.removeClass(classes.activeItem);
