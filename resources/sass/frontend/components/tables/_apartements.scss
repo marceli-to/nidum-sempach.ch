@@ -30,7 +30,7 @@ table.apartements {
 
   td {
     @include font-size($fs-xs);
-    padding: 15px 7px 15px 0;
+    padding: 10px 7px 10px 0;
     @include bp-md() {
       padding: 5px 7px 5px 0;
     }
