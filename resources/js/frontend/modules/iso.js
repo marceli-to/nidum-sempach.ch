@@ -79,6 +79,8 @@ var Iso = (function() {
           document.querySelector('[data-iso-wrapper] [data-iso-building-overview="' + item.dataset.building + '"]').classList.add(classes.activeBuilding);
           document.querySelector('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"]').classList.add(classes.visibleBuilding);
           document.querySelector('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"] [data-name="' + item.dataset.number + '"]').classList.add(classes.activeItem);
+          const floor = $('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"] [data-floor="' + item.dataset.floor + '"]');
+          floor.nextAll().css('opacity', '.2');
         }
       });
 
@@ -88,6 +90,8 @@ var Iso = (function() {
           document.querySelector('[data-iso-wrapper] [data-iso-building-overview="' + item.dataset.building + '"]').classList.remove(classes.activeBuilding);
           document.querySelector('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"]').classList.remove(classes.visibleBuilding);
           document.querySelector('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"] [data-name="' + item.dataset.number + '"]').classList.remove(classes.activeItem);
+          const floor = $('[data-iso-wrapper] [data-iso-building="' + item.dataset.building + '"] [data-floor="' + item.dataset.floor + '"]');
+          floor.nextAll().css('opacity', '1');
         }
       });
     });
