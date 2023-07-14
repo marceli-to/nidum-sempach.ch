@@ -39,14 +39,14 @@ var Objects = (function() {
 
   var _bind = function() {
     // on touch start (item) add the 'is-visible' class to the wrapper
-    // $(selectors.body).on('touchstart', selectors.item, function(){
-    //   _show(this);
-    // });
-
-    // on click (item) add the 'is-visible' class to the wrapper
-    $(selectors.body).on('click', selectors.item, function(){
+    $(selectors.body).on('touchstart', selectors.item, function(){
       _show(this);
     });
+
+    // on click (item) add the 'is-visible' class to the wrapper
+    // $(selectors.body).on('click', selectors.item, function(){
+    //   _show(this);
+    // });
 
   };
 
@@ -90,7 +90,6 @@ var Objects = (function() {
     buildingsOverview.removeClass(classes.activeBuilding);
     apartments.removeClass(classes.activeItem);
   };
-
 
   var _isMobile = function() {
     return window.matchMedia('(max-width: 1024px)').matches || window.innerWidth <= 1024;
