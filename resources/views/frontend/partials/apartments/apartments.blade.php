@@ -63,9 +63,9 @@
               @endif
             </td>
             <td class="align-right">
-              @if ($a['object_state'] == 'rented')
+              @if ($a['object_state'] == 'reserved')
                 reserviert
-              @elseif ($a['object_state'] == 'reserved')
+              @elseif ($a['object_state'] == 'rented')
                 vermietet
               @else
                 {{ AppHelper::apartmentCostsToDecimal($a['rentalgross']) }}
