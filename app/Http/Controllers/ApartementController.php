@@ -12,7 +12,7 @@ class ApartementController extends Controller
       view(
         'frontend.pages.apartements',
         [
-          'apartements' => (new GetData)->execute(),
+          // 'apartements' => (new GetData)->execute(),
         ]
       );
   }

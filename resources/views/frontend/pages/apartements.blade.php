@@ -5,7 +5,8 @@
   <div class="page-inner">
     <article>
       <h1>Angebot Wohnen</h1>
-      <form class="apartment-form">
+      <p>Zurzeit sind keine freien Wohnungen verfügbar.</p>
+      {{-- <form class="apartment-form">
         <div class="sm:grid sm:grid-cols-12 sm:grid-column-gap">
           <div class="sm:span-3">
             <div class="form-row">
@@ -117,7 +118,7 @@
           <a href="javascript:;" class="btn-selection is-hide js-selection-hide">Auswahl verbergen</a>
         </div>
       </div>
-      @include('frontend.partials.apartments.apartments')
+      @include('frontend.partials.apartments.apartments') --}}
     </article>
   </div>
 </section>
